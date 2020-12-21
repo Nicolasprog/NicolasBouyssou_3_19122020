@@ -3,19 +3,22 @@
 
                                                                                 /*HEADER*/
 #LogoOMF {
-    align-items: center;
+    text-align: center;
     width:50%;}
                                                                                 /*FIN HEADER*/
                                                                                 /*BODY*/
-nav li {
+#bloc-page {
+    max-width: 768px;}
+
+li {
+    align-items: center;
     list-style-type: none;}
 
 .Tuiles {
-    width:90%;
+    width: 90%;
     margin:auto;
     height:100px;
     border-radius: 10px;}
-
                                                                                 /*FIN BODY*/
 
                                                                                 /*PARAMETRE GENERAUX*/
