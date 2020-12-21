@@ -7,7 +7,9 @@
     width:50%;}
                                                                                 /*FIN HEADER*/
                                                                                 /*BODY*/
-
+.Tuiles {
+    width:90%;
+    margin:auto;}
 
                                                                                 /*FIN BODY*/
 
@@ -15,6 +17,7 @@
 a {
     text-decoration: none;
     color:#000;}
+
 
                                                                                 /*FIN PARAMETRE GENERAUX*/
 
