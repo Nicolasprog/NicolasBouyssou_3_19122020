@@ -34,17 +34,18 @@ li {
     margin-bottom: 20px;
     list-style-type:none;}
 
-#Tuiles {
+.Tuiles {
     width: 90%;
     margin:auto;
     height:100px;
     box-shadow: 5px 3px 3px #d9d9d9;
     border-radius: 10px;
-    border:1px color red;}
-.title {
+    border:1px color red;
+    .title {
     font-weight: bold;}
-.lieu {
+    .lieu {
     font-weight: normal;}
+}
                                                                                 /*FIN BODY*/
 
                                                                                 /*SECTION*/
