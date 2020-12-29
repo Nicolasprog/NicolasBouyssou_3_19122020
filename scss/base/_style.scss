@@ -3,15 +3,18 @@
 
 /*HEADER*/
 header {
-    height:60px;}
+    height:60px;
+    box-shadow:0px 10px 5px 0 #656565;}
 
 .Logo {
-    align-items: center;
+    height:30px;
     img {
-        font-size: 0.8em;}
+        align-items: center;
+        height:30px;}
 }
 
 #location {
+    background-color: #eaeaea;
     height:50px;}
                                                                                 /*FIN HEADER*/
                                                                                 /*BODY*/
@@ -20,7 +23,12 @@ header {
 
 #title {
     height:290px;
-    text-align: center;}
+    text-align: center;
+    background-color: #f6f6f6;
+    h1 {
+        padding-top: 70px;
+        margin-top: 0%;}
+}
 .search {
     height:40px;
     padding:0 20px 0 20px;
@@ -39,8 +47,12 @@ nav {
     margin:0%;
     padding:0%;}
     li {
+    display:flex;
     height:50px;
+    width: 90%;
+    margin: auto;
     margin-bottom: 20px;
+    text-align: center;
     list-style-type:none;}
 }
 
