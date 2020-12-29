@@ -8,11 +8,22 @@ img {
   object-fit: cover;
 }
 
+.title {
+  font-weight: bold;
+}
+
 footer {
   width: 100%;
   padding-left: 20px;
-  background: black;
+  background: #353535;
   color: white;
+}
+footer .Logo {
+  width: 100px;
+  color: white;
+}
+footer p {
+  padding-left: 15px;
 }
 
 /*HEADER*/
@@ -20,13 +31,15 @@ header {
   height: 60px;
 }
 
-#LogoOMF {
-  font-size: small;
+.Logo {
   align-items: center;
+}
+.Logo img {
+  font-size: 0.8em;
 }
 
 #location {
-  margin-top: 50px;
+  height: 50px;
 }
 
 /*FIN HEADER*/
@@ -36,10 +49,11 @@ header {
 }
 
 #title {
+  height: 290px;
   text-align: center;
 }
 
-#search {
+.search {
   height: 40px;
   padding: 0 20px 0 20px;
   background-color: #b634b6;
@@ -50,41 +64,64 @@ header {
 
 nav {
   margin-top: 40px;
+  height: 440px;
+  vertical-align: middle;
   text-align: center;
+  font-weight: bold;
 }
-
-li {
+nav ul {
+  margin: 0%;
+  padding: 0%;
+}
+nav li {
   height: 50px;
   margin-bottom: 20px;
   list-style-type: none;
 }
 
+#Accueil {
+  margin-bottom: 65px;
+}
+#Accueil h3 {
+  padding-left: 20px;
+}
+
 .Tuiles {
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
   margin: auto;
-  height: 100px;
+  margin-bottom: 20px;
+  height: fit-content;
   box-shadow: 5px 3px 3px #d9d9d9;
   border-radius: 10px;
-  border: 1px color red;
+}
+.Tuiles .Description {
+  position: relative;
+  height: 75px;
+  padding-left: 15px;
+}
+.Tuiles img {
+  max-height: 175px;
+  border-radius: 10px 10px 0 0;
 }
 .Tuiles .title {
+  margin-bottom: 0.5em;
   font-weight: bold;
 }
 .Tuiles .lieu {
+  margin-top: 0.5em;
   font-weight: normal;
+}
+.Tuiles .hearth {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 1.7em;
 }
 
 /*FIN BODY*/
 /*SECTION*/
 /*FIN SECTION*/
-/*FOOTER*/
-footer {
-  width: 100%;
-  padding-left: 15px;
-  background: #353535;
-  color: white;
-}
-
-/*FIN FOOTER*/
 
 /*# sourceMappingURL=style.css.map */
