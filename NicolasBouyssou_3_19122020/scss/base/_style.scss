@@ -2,7 +2,11 @@
 
 
 /*HEADER*/
+header {
+    height:100px;}
+
 #LogoOMF {
+    height:50px;
     align-items: center;}
                                                                                 /*FIN HEADER*/
                                                                                 /*BODY*/
@@ -23,14 +27,15 @@ nav {
     text-align: center;}
 li {
     align-items: center;
-    list-style-type: none;}
+    list-style-type:none;}
 
 #Tuiles {
     width: 90%;
     margin:auto;
     height:100px;
     box-shadow: 5px 3px 3px #d9d9d9;
-    border-radius: 10px;}
+    border-radius: 10px;
+    border:1px color red;}
 .title {
     font-weight: bold;}
 .lieu {
@@ -46,6 +51,6 @@ li {
 footer {
     width:100%;
     padding-left: 15px;
-    background:black;
+    background:#353535;
     color:white;}
                                                                                 /*FIN FOOTER*/
