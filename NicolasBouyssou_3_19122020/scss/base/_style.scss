@@ -25,19 +25,17 @@ li {
     align-items: center;
     list-style-type: none;}
 
-.Tuiles {
+#Tuiles {
     width: 90%;
     margin:auto;
     height:100px;
     box-shadow: 5px 3px 3px #d9d9d9;
     border-radius: 10px;}
+.title {
+    font-weight: bold;}
+.lieu {
+    font-weight: normal;}
                                                                                 /*FIN BODY*/
-
-                                                                                /*PARAMETRE GENERAUX*/
-img {
-    object-fit: cover;}
-
-                                                                                /*FIN PARAMETRE GENERAUX*/
 
                                                                                 /*SECTION*/
 
