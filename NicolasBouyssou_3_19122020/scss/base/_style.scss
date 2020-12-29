@@ -3,13 +3,11 @@
 
 /*HEADER*/
 #LogoOMF {
-    text-align: center;}
+    align-items: center;}
                                                                                 /*FIN HEADER*/
                                                                                 /*BODY*/
 #bloc-page {
     max-width: 768px;}
-#LogoOMF {
-    align-self: center;}
 
 #title {
     text-align: center;}
@@ -31,13 +29,11 @@ li {
     width: 90%;
     margin:auto;
     height:100px;
+    box-shadow: 5px 3px 3px #d9d9d9;
     border-radius: 10px;}
                                                                                 /*FIN BODY*/
 
                                                                                 /*PARAMETRE GENERAUX*/
-a {
-    text-decoration: none;
-    color:#000;}
 img {
     object-fit: cover;}
 
