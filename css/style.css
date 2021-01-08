@@ -131,8 +131,8 @@ nav li {
 }
 .Tuiles--new::after {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 13px;
+  right: 13px;
   padding: 5px;
   background-color: green;
   content: "Nouveau";
