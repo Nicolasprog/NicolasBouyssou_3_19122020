@@ -133,6 +133,7 @@ nav li {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 5px;
   background-color: green;
   content: "Nouveau";
 }
