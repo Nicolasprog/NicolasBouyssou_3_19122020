@@ -8,13 +8,15 @@ header {
     box-shadow:0px 5px 5px 0 #818080;}
 
 .Logo {
-    align-content: center;
     height:30px;
     img {
+        display:block;
+        margin: auto;
         height:30px;}
 }
 
 #location {
+    text-align: center;
     background-color: #eaeaea;
     height:50px;}
                                                                                 /*FIN HEADER*/
@@ -40,9 +42,11 @@ header {
     border-radius: 20px;}
 
 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top:40px;
     height:440px;
-    vertical-align: middle;
     text-align: center;
     font-weight: bold;
     ul {
