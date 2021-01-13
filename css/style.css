@@ -1,3 +1,18 @@
+/*MIXIN FUNCTIONS*/
+footer {
+  width: 100%;
+  padding-left: 20px;
+  background: #353535;
+  color: white;
+}
+footer .Logo {
+  width: 100px;
+  color: white;
+}
+footer p {
+  padding-left: 15px;
+}
+
 a {
   /*PRAMETRE GENERAUX*/
   /*Typographie fond*/
@@ -11,20 +26,6 @@ img {
 
 .title {
   font-weight: bold;
-}
-
-footer {
-  width: 100%;
-  padding-left: 20px;
-  background: #353535;
-  color: white;
-}
-footer .Logo {
-  width: 100px;
-  color: white;
-}
-footer p {
-  padding-left: 15px;
 }
 
 /*HEADER*/
@@ -160,6 +161,5 @@ nav li {
 /*FIN BODY*/
 /*SECTION*/
 /*FIN SECTION*/
-/*MIXIN FUNCTIONS*/
 
 /*# sourceMappingURL=style.css.map */
