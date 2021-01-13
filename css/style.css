@@ -13,6 +13,11 @@ footer p {
   padding-left: 15px;
 }
 
+p {
+  margin: 0%;
+  padding: 0%;
+}
+
 a {
   /*PRAMETRE GENERAUX*/
   /*Typographie fond*/
@@ -59,6 +64,9 @@ header {
   background-color: #eaeaea;
   height: 50px;
 }
+#location i {
+  vertical-align: middle;
+}
 
 /*FIN HEADER*/
 /*BODY*/
@@ -76,9 +84,10 @@ header {
   margin-top: 0%;
 }
 
-.search {
+button.search {
   height: 40px;
-  padding: 0 20px 0 20px;
+  margin-top: 35px;
+  padding: 0 30px;
   background: linear-gradient(150deg, #ec73da, #a05adc);
   color: white;
   border: none;
@@ -91,7 +100,6 @@ nav {
   justify-content: center;
   margin-top: 40px;
   height: 440px;
-  text-align: center;
   font-weight: bold;
 }
 nav ul {
@@ -99,20 +107,32 @@ nav ul {
   padding: 0%;
 }
 nav li {
-  display: flex;
   height: 50px;
-  width: 90%;
+  width: 95%;
   margin: auto;
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 20px;
   list-style-type: none;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 4px #d9d9d9;
+}
+nav li i {
+  margin-right: 10%;
 }
 
 #Accueil {
   margin-bottom: 65px;
 }
-#Accueil h3 {
+#Accueil h2 {
   padding-left: 20px;
+}
+
+#Menu-1 #Menu-2 #Menu-3 #Menu-4 {
+  background-color: #f6f6f6;
+}
+#Menu-1 #Menu-2 #Menu-3 #Menu-4 img {
+  width: auto;
 }
 
 .Tuiles {
@@ -136,7 +156,7 @@ nav li {
   top: 13px;
   right: 13px;
   padding: 5px;
-  background-color: green;
+  background-color: #99e2d0;
   content: "Nouveau";
 }
 .Tuiles img {
@@ -155,7 +175,33 @@ nav li {
   position: absolute;
   right: 20px;
   top: 25px;
-  font-size: 1.7em;
+  font-size: 1.5em;
+}
+
+#title-hearth {
+  display: inline-flex;
+}
+#title-hearth i {
+  position: absolute;
+  right: 20px;
+}
+
+.Palette {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px #d9d9d9;
+}
+.Palette .Container-palette {
+  padding-left: 15px;
+}
+.Palette .Description-price span {
+  font-weight: bold;
+  position: absolute;
+  right: 50px;
 }
 
 /*FIN BODY*/
