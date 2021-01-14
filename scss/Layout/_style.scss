@@ -7,7 +7,6 @@ header {
 
 .Logo {
     font-weight: bold;
-    text-align: center;
     i {
         position: absolute;
         top:15px;
@@ -100,7 +99,7 @@ nav {
     max-height:175px;
     border-radius: 10px 10px 0 0;}
     .title {
-    margin-bottom: 0.5em;
+    margin:1em 0 0.5em 0;
     font-weight: bold;}
     .lieu {
     margin-top:0.5em;
