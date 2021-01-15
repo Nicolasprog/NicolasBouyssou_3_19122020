@@ -1,4 +1,8 @@
-/*MIXIN FUNCTIONS VARIABLES PLACEHOLDER ET EXTENSIONS*/
+@charset "UTF-8";
+/*FUNCTIONS VARIABLES PLACEHOLDER ET EXTENSIONS*/
+/*MIXINS*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 footer {
   width: 100%;
   padding-left: 20px;
@@ -18,9 +22,9 @@ p {
   padding: 0%;
 }
 
+/*PRAMETRE GENERAUX*/
+/*Typographie*/
 a {
-  /*PRAMETRE GENERAUX*/
-  /*Typographie fond*/
   text-decoration: none;
   color: #000;
 }
@@ -33,6 +37,25 @@ img {
   font-weight: bold;
 }
 
+p {
+  font-family: "Roboto", Arial, Sans-serif;
+}
+
+h1, h2, h3, .Logo {
+  font-family: "Shrikhand", Arial, Sans-serif;
+}
+
+/*Bloc spécifiques button etc...*/
+button.search {
+  height: 40px;
+  margin-top: 35px;
+  padding: 0 30px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(130deg, #FF79DA, #9356DC);
+}
+
 /*HEADER*/
 header {
   height: 60px;
@@ -40,16 +63,7 @@ header {
 }
 
 .Logo {
-  display: inline-flex;
-  vertical-align: auto;
-  position: relative;
-  width: 100%;
-  height: 30px;
-}
-.Logo img {
-  margin: auto;
-  padding-top: 15px;
-  height: 30px;
+  font-weight: bold;
 }
 .Logo i {
   position: absolute;
@@ -82,16 +96,6 @@ header {
 #title h1 {
   padding-top: 70px;
   margin-top: 0%;
-}
-
-button.search {
-  height: 40px;
-  margin-top: 35px;
-  padding: 0 30px;
-  background: linear-gradient(130deg, #FF79DA, #9356DC);
-  color: white;
-  border: none;
-  border-radius: 20px;
 }
 
 nav {
@@ -129,10 +133,8 @@ nav li i {
 }
 
 #Menu-1 #Menu-2 #Menu-3 #Menu-4 {
+  border-radius: 10px 10px 0 0;
   background-color: #f6f6f6;
-}
-#Menu-1 #Menu-2 #Menu-3 #Menu-4 img {
-  width: auto;
 }
 
 .Tuiles {
@@ -156,7 +158,7 @@ nav li i {
   top: 13px;
   right: 13px;
   padding: 5px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   content: "Nouveau";
 }
 .Tuiles img {
@@ -164,7 +166,7 @@ nav li i {
   border-radius: 10px 10px 0 0;
 }
 .Tuiles .title {
-  margin-bottom: 0.5em;
+  margin: 10px 0 0.5em 0;
   font-weight: bold;
 }
 .Tuiles .lieu {

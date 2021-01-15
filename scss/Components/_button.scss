@@ -4,7 +4,7 @@ button.search {
     height:40px;
     margin-top: 35px;
     padding:0 30px;
-    @include color-gradient;
     color: white;
     border: none;
-    border-radius: 20px;}
+    border-radius: 20px;
+    @include color-gradient;}
