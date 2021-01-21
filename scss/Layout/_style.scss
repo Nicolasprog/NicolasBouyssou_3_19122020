@@ -7,6 +7,9 @@ header {
 
 .Logo {
     font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    padding-top:8px;
     i {
         position: absolute;
         top:15px;
@@ -15,12 +18,14 @@ header {
 }
 
 #location {
-    margin-top: 3px;
     text-align: center;
+    vertical-align: center;
+    margin-top: 4px;
     background-color: #eaeaea;
+    font-weight: bold;
     height:50px;
     i {
-        vertical-align: middle;}
+        padding-right: 10px;}
 }
                                                                                 /*FIN HEADER*/
                                                                                 /*BODY*/
@@ -48,17 +53,23 @@ nav {
     padding:0%;}
     li {
     height:50px;
-    width: 95%;
+    width: 90%;
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
     list-style-type: none;
     border-radius: 20px;
     background-color: #f6f6f6;
-    box-shadow: 0px 4px 4px #d9d9d9;
+    box-shadow: 0px 4px 4px #d9d9d9;}
+    span {
+    position: absolute;
+    left:5%;
+    width:20px;
+    border-radius: 50%;
+    background: $color-primary;
+    color:$color-white;}
     i {
         margin-right: 10%;}
-    }
 }
 
 #Accueil {
@@ -69,6 +80,9 @@ nav {
 #Menu-1 #Menu-2 #Menu-3 #Menu-4 {
     border-radius: 10px 10px 0 0;
     background-color: #f6f6f6;
+    img {
+        height:auto;
+        width:100%;}
 }
 
 .Tuiles {
@@ -92,6 +106,8 @@ nav {
             right:13px;
             padding:5px;
             background-color:$color-three;
+            color:$color-four;
+            border-radius: 3px;
             content:"Nouveau";
         }
     }
@@ -107,31 +123,38 @@ nav {
     .hearth {
     position: absolute;
     right:20px;
-    top:25px;
-    font-size: 1.5em;}
+    top:15px;
+    font-size: 1.8em;}
 }
 
 #title-hearth {
     display:inline-flex;
+    margin:0 0 50px 50px;
     i {
         position: absolute;
-        right:20px;}
+        right:20px;
+        font-size: 1.9em;}
 }
 
-.Palette {
+.Container-palette {
+    margin-left: 50px;
+    .Palette {
     display:flex;
     width:90%;
     margin: auto;
     padding: 5px;
+    position:relative;
     margin-bottom: 10px;
     border-radius: 10px;
-    box-shadow:0 4px 4px #d9d9d9;
-    .Container-palette {
+    box-shadow:0 4px 4px #d9d9d9;}
+    .Description-palette {
+        width:90%;
+        margin:auto;
         padding-left: 15px;}
     .Description-price span {
         font-weight: bold;
         position: absolute;
-        right:50px;}
+        right:3%;}
 }
                                                                                 /*FIN BODY*/
 
