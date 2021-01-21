@@ -3,3 +3,16 @@
 @mixin color-gradient {
     background:linear-gradient(160deg,$color-secondary,$color-primary);}
 
+$btn-mods: (
+    pink: ($color-secondary,),
+    blue: ($color-tertiary,),
+    black: ($color-four,)
+    );
+    
+@mixin btn-mods ($map){
+    @each $mod,$val in $map {
+        &--#{$mod}{
+        background-color:$val;
+        }
+    }
+}

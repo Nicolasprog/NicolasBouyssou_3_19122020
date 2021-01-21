@@ -62,7 +62,6 @@ h1, h2, h3, .Logo {
   padding: 0 30px;
   color: white;
   border: none;
-  text-align: center;
   border-radius: 20px;
   box-shadow: 0px 4px 4px #d9d9d9;
   background: linear-gradient(160deg, #FF79DA, #9356DC);
@@ -123,6 +122,9 @@ nav {
   height: 440px;
   font-weight: bold;
 }
+nav h2 {
+  padding-left: 20px;
+}
 nav ul {
   margin: 0%;
   padding: 0%;
@@ -147,7 +149,8 @@ nav span {
   color: #fff;
 }
 nav i {
-  margin-right: 10%;
+  vertical-align: middle;
+  margin-right: 5%;
 }
 
 #Accueil {
@@ -157,11 +160,12 @@ nav i {
   padding-left: 20px;
 }
 
-#Menu-1 #Menu-2 #Menu-3 #Menu-4 {
+#Menu-1, #Menu-2, #Menu-3, #Menu-4 {
   border-radius: 10px 10px 0 0;
+  width: 100%;
   background-color: #f6f6f6;
 }
-#Menu-1 #Menu-2 #Menu-3 #Menu-4 img {
+#Menu-1 img, #Menu-2 img, #Menu-3 img, #Menu-4 img {
   height: auto;
   width: 100%;
 }
@@ -188,7 +192,7 @@ nav i {
   right: 13px;
   padding: 5px;
   background-color: #99E2D0;
-  color: #39a98e;
+  color: #0a8c6d;
   border-radius: 3px;
   content: "Nouveau";
 }
@@ -212,7 +216,8 @@ nav i {
 }
 
 #title-hearth {
-  display: inline-flex;
+  display: flex;
+  position: relative;
   margin: 0 0 50px 50px;
 }
 #title-hearth i {
@@ -226,6 +231,11 @@ nav i {
   margin: auto;
   margin: 0 0 50px 50px;
 }
+.Container-palette #Indicator {
+  width: 40px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #99E2D0;
+}
 .Container-palette .Palette {
   display: flex;
   width: 90%;
@@ -233,6 +243,7 @@ nav i {
   position: relative;
   margin-bottom: 10px;
   border-radius: 10px;
+  background-color: #fff;
   box-shadow: 0 4px 4px #d9d9d9;
 }
 .Container-palette .Description-palette {
