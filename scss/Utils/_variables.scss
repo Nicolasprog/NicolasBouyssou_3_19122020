@@ -1,22 +1,22 @@
 /*FUNCTIONS VARIABLES PLACEHOLDER ET EXTENSIONS*/
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
-$color-three:#99E2D0;
+$color-tertiary:#99E2D0;
 $color-four:#39a98e;
 $color-initial:#000;
-$color-white:#fff;
+$color-accent:#fff;
 
 $txt-input-palette: (
       active: (
-          bg: $color-white,
-          border: $color-white,
+          bg: $color-accent,
+          border: $color-accent,
           txt: $color-initial,),
       focus: (
           bg: $color-primary,
-          border: $color-white,
+          border: $color-accent,
           txt: $color-initial,),
       invalid: (
-          bg: $color-white,
-          border: $color-white,
+          bg: $color-accent,
+          border: $color-accent,
           txt: $color-initial,)
-    );
+);
