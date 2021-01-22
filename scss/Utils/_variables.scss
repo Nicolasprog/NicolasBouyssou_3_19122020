@@ -5,10 +5,21 @@ $color-tertiary:#99E2D0;
 $color-four:#0a8c6d;
 $color-initial:#000;
 $color-accent:#fff;
+$color-bg:#f6f6f6;
+
+$btn-mods: (
+    pink: ($color-secondary,),
+    blue: ($color-tertiary,),
+    black: ($color-four,)
+    );
+
+$breakpoint:(
+    mobile:980px,
+    desktop:981px);
 
 $txt-input-palette: (
       active: (
-          bg: $color-accent,
+          bg: $color-bg,
           border: $color-accent,
           txt: $color-initial,),
       focus: (
