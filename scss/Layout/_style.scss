@@ -1,5 +1,5 @@
 
-
+@media screen and (max-width: 980px) {
 /*HEADER*/
 header {
     height:60px;
@@ -12,9 +12,9 @@ header {
     padding-top:8px;
     i {
         position: absolute;
-        top:15px;
-        left:15px;
-        font-size: 30px;}
+        top:30px;
+        left:100px;
+        font-size: 20px;}
 }
 
 #location {
@@ -35,10 +35,9 @@ header {
 #title {
     height:290px;
     text-align: center;
-    background-color: #f6f6f6;
     h1 {
         padding-top: 70px;
-        margin-top: 0%;}
+        margin-top:15px ;}
 }
 
 nav {
@@ -85,8 +84,7 @@ nav {
     width:100%;
     background-color: #f6f6f6;
     img {
-        height:auto;
-        width:100%;}
+        width:768px;}
 }
 
 .Tuiles {
@@ -119,7 +117,7 @@ nav {
     max-height:175px;
     border-radius: 10px 10px 0 0;}
     .title {
-    margin:10px 0 0.5em 0;
+    margin:15px 0 0.5em 0;
     font-weight: bold;}
     .lieu {
     margin-top:0.5em;
@@ -137,7 +135,8 @@ nav {
     margin:0 0 50px 50px;
     i {
         position: absolute;
-        right:20px;
+        right:30px;
+        top:20px;
         font-size: 1.9em;}
 }
 
@@ -152,22 +151,198 @@ nav {
     .Palette {
     display:flex;
     width:90%;
+    height:70px;
     padding: 5px;
     position:relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 10px;
     background-color: $color-accent;
     box-shadow:0 4px 4px #d9d9d9;}
     .Description-palette {
-        padding-left: 15px;}
+        padding-left: 13px;}
+    .title {
+        font-size: 1.2em;
+        margin-top: 10px;}
+    .Description-price {
+        margin-top: 12px;}
     .Description-price span {
         font-weight: bold;
         position: absolute;
-        right:3%;}
+        right:3%;
+        bottom:10px;}
+}
 }
                                                                                 /*FIN BODY*/
+ @media screen and (min-width: 981px) {
+/*HEADER*/
+header {
+    height:60px;
+    box-shadow:0px 5px 5px 0 #818080;}
 
-                                                                                /*SECTION*/
+.Logo {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    padding-top:8px;
+    i {
+        position: absolute;
+        top:30px;
+        left:100px;
+        font-size: 20px;}
+}
 
+#location {
+    text-align: center;
+    vertical-align: center;
+    margin-top: 4px;
+    background-color: #eaeaea;
+    font-weight: bold;
+    height:50px;
+    i {
+        padding-right: 10px;}
+}
+                                                                                /*FIN HEADER*/
+                                                                                /*BODY*/
+#bloc-page {
+    max-width: 768px;}
 
-                                                                                /*FIN SECTION*/
+#title {
+    height:290px;
+    text-align: center;
+    h1 {
+        padding-top: 70px;
+        margin-top:15px ;}
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:40px;
+    height:440px;
+    font-weight: bold;
+    h2 {
+        padding-left: 20px;}
+    ul {
+    margin:0%;
+    padding:0%;}
+    li {
+    height:50px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    list-style-type: none;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 4px #d9d9d9;}
+    span {
+    position: absolute;
+    left:5%;
+    width:20px;
+    border-radius: 50%;
+    background: $color-primary;
+    color:$color-accent;}
+    i {
+        vertical-align: middle;
+        margin-right: 5%;}
+}
+
+#Accueil {
+    margin-bottom: 65px;
+    h2{
+    padding-left:20px;}
+}
+#Menu-1,#Menu-2,#Menu-3,#Menu-4 {
+    border-radius: 10px 10px 0 0;
+    width:100%;
+    background-color: #f6f6f6;
+    img {
+        width:768px;}
+}
+
+.Tuiles {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    width: 95%;
+    margin:auto;
+    margin-bottom: 20px;
+    height:fit-content;
+    box-shadow: 0px 4px 4px #d9d9d9;
+    border-radius: 10px;
+    &__Description {
+    position:relative;
+    height:75px;
+    padding-left: 15px;}
+    &--new {
+        &::after {
+            position:absolute;
+            top:13px;
+            right:13px;
+            padding:5px;
+            background-color:$color-tertiary;
+            color:$color-four;
+            border-radius: 3px;
+            content:"Nouveau";
+        }
+    }
+    img {
+    max-height:175px;
+    border-radius: 10px 10px 0 0;}
+    .title {
+    margin:15px 0 0.5em 0;
+    font-weight: bold;}
+    .lieu {
+    margin-top:0.5em;
+    font-weight: normal;}
+    .hearth {
+    position: absolute;
+    right:20px;
+    top:15px;
+    font-size: 1.8em;}
+}
+
+#title-hearth {
+    display:flex;
+    position: relative;
+    margin:0 0 50px 50px;
+    i {
+        position: absolute;
+        right:30px;
+        top:20px;
+        font-size: 1.9em;}
+}
+
+.Container-palette {
+    width:100%;
+    margin: auto;
+    margin:0 0 50px 50px;
+    #Indicator {
+    width:40px;
+    margin-bottom: 20px;
+    border-bottom:3px solid $color-tertiary;}
+    .Palette {
+    display:flex;
+    width:90%;
+    height:70px;
+    padding: 5px;
+    position:relative;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: $color-accent;
+    box-shadow:0 4px 4px #d9d9d9;}
+    .Description-palette {
+        padding-left: 13px;}
+    .title {
+        font-size: 1.2em;
+        margin-top: 10px;}
+    .Description-price {
+        margin-top: 12px;}
+    .Description-price span {
+        font-weight: bold;
+        position: absolute;
+        right:3%;
+        bottom:10px;}
+}
+ }
