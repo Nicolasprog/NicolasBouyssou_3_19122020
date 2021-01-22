@@ -170,12 +170,18 @@ nav li .test {
   padding-left: 20px;
 }
 
-#Menu-1, #Menu-2, #Menu-3, #Menu-4 {
+#Menu-1,
+#Menu-2,
+#Menu-3,
+#Menu-4 {
   border-radius: 10px 10px 0 0;
   width: 100%;
   background-color: #f6f6f6;
 }
-#Menu-1 img, #Menu-2 img, #Menu-3 img, #Menu-4 img {
+#Menu-1 img,
+#Menu-2 img,
+#Menu-3 img,
+#Menu-4 img {
   width: 768px;
 }
 
