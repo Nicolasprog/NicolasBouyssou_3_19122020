@@ -1,5 +1,3 @@
-
-@media screen and (max-width: 980px) {
 /*HEADER*/
 header {
     height:60px;
@@ -53,25 +51,33 @@ nav {
     margin:0%;
     padding:0%;}
     li {
-    height:50px;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 20px;
-    list-style-type: none;
-    border-radius: 20px;
-    background-color: $color-bg;
-    box-shadow: 0px 4px 4px #d9d9d9;}
-    span {
-    position: absolute;
-    left:5%;
-    width:20px;
-    border-radius: 50%;
-    background: $color-primary;
-    color:$color-accent;}
-    i {
-        vertical-align: middle;
-        margin-right: 5%;}
+        display: flex;
+        align-items: center;
+        position: relative;
+        height:50px;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        list-style-type: none;
+        border-radius: 20px;
+        background-color: $color-bg;
+        box-shadow: 0px 4px 4px #d9d9d9;
+        span {
+            position: absolute;
+            left:-10px;
+            width:20px;
+            border-radius: 50%;
+            background: $color-primary;
+            color:$color-accent;
+        }
+        i {
+            margin-right: 5%;
+        }
+        .test{
+            width:25%;
+        }
+    }     
 }
 
 #Accueil {
@@ -125,6 +131,9 @@ nav {
     right:20px;
     top:15px;
     font-size: 1.8em;}
+    @media screen and (min-width: 981px) {
+        flex-direction: row;
+    }
 }
 
 #title-hearth {
@@ -155,9 +164,10 @@ nav {
     margin-bottom: 15px;
     border-radius: 10px;
     background-color: $color-accent;
-    box-shadow:0 4px 4px #d9d9d9;}
-        &__check:hover {
+    box-shadow:0 4px 4px #d9d9d9;
+        &:hover {
             transform:translateX(-60px);}
+    }
     .Description-palette {
     padding-left: 13px;}
     .title {
@@ -170,7 +180,6 @@ nav {
     position: absolute;
     right:3%;
     bottom:10px;}
-    }
 }
+
                                                                                 /*FIN BODY*/
-@media screen and (min-width: 981px) {}
