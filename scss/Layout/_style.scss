@@ -12,9 +12,9 @@ header {
     padding-top:8px;
     i {
         position: absolute;
-        top:30px;
+        top:27px;
         left:100px;
-        font-size: 20px;}
+        font-size: 25px;}
 }
 
 #location {
@@ -109,9 +109,8 @@ nav {
             background-color:$color-tertiary;
             color:$color-four;
             border-radius: 3px;
-            content:"Nouveau";
+            content:"Nouveau";}
         }
-    }
     img {
     max-height:175px;
     border-radius: 10px 10px 0 0;}
@@ -140,9 +139,9 @@ nav {
 }
 
 .Container-palette {
-    width:100%;
+    width:90%;
     margin: auto;
-    margin:0 0 50px 50px;
+    margin-bottom:50px;
     #Indicator {
     width:40px;
     margin-bottom: 20px;
@@ -157,6 +156,8 @@ nav {
     border-radius: 10px;
     background-color: $color-accent;
     box-shadow:0 4px 4px #d9d9d9;}
+        &__check:hover {
+            transform:translateX(-60px);}
     .Description-palette {
     padding-left: 13px;}
     .title {
