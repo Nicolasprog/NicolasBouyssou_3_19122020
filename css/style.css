@@ -93,8 +93,7 @@ header {
 }
 
 #location {
-  display: flex;
-  align-items: center;
+  text-align: center;
   margin-top: 4px;
   background-color: #eaeaea;
   font-weight: bold;
@@ -170,10 +169,6 @@ nav li .nav-i {
   padding-left: 20px;
 }
 
-.img-menu {
-  width: 100%;
-}
-
 #Menu-1,
 #Menu-2,
 #Menu-3,
@@ -181,6 +176,12 @@ nav li .nav-i {
   border-radius: 20px 20px 0 0;
   width: 100%;
   background-color: #f6f6f6;
+}
+#Menu-1 .img-menu,
+#Menu-2 .img-menu,
+#Menu-3 .img-menu,
+#Menu-4 .img-menu {
+  width: 100%;
 }
 
 .Tuiles {

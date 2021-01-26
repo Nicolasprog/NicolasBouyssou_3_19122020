@@ -18,8 +18,7 @@ header {
 }
 
 #location {
-  display: flex;
-  align-items: center;
+  text-align: center;
   margin-top: 4px;
   background-color: #eaeaea;
   font-weight: bold;
@@ -94,9 +93,7 @@ nav {
   }
 }
 
-.img-menu {
-  width: 100%;
-}
+
 #Menu-1,
 #Menu-2,
 #Menu-3,
@@ -104,6 +101,9 @@ nav {
   border-radius: 20px 20px 0 0;
   width: 100%;
   background-color: $color-bg;
+  .img-menu {
+    width:100%;
+  }
 }
 
 .Tuiles {
