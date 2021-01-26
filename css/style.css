@@ -93,8 +93,8 @@ header {
 }
 
 #location {
-  text-align: center;
-  vertical-align: center;
+  display: flex;
+  align-items: center;
   margin-top: 4px;
   background-color: #eaeaea;
   font-weight: bold;
@@ -159,8 +159,8 @@ nav li span {
 nav li i {
   margin-right: 5%;
 }
-nav li .test {
-  width: 25%;
+nav li .nav-i {
+  width: 40%;
 }
 
 #Accueil {
@@ -170,19 +170,17 @@ nav li .test {
   padding-left: 20px;
 }
 
+.img-menu {
+  width: 100%;
+}
+
 #Menu-1,
 #Menu-2,
 #Menu-3,
 #Menu-4 {
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
   width: 100%;
   background-color: #f6f6f6;
-}
-#Menu-1 img,
-#Menu-2 img,
-#Menu-3 img,
-#Menu-4 img {
-  width: 768px;
 }
 
 .Tuiles {
@@ -242,8 +240,11 @@ nav li .test {
 #title-hearth i {
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 30px;
   font-size: 1.9em;
+}
+#title-hearth h1 {
+  font-size: 30px;
 }
 
 .Container-palette {
