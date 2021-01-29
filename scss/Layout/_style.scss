@@ -121,6 +121,9 @@ nav {             //Height:440px
   margin-top: 260px;
   width: 100%;
   background-color: $color-bg;
+  .Logo{
+    box-shadow: none;
+  }
   .img-menu {
     img {
       position: absolute;
@@ -175,11 +178,15 @@ nav {             //Height:440px
     right: 20px;
     top: 15px;
     font-size: 1.8em;
+    &:hover {
+      
+    }
   }
   @media screen and (min-width:980px) {
     &:hover {
       transform:scale(1.03);
     }
+    flex-wrap: wrap;
     width:50%;
     justify-content:center;
   }
@@ -221,7 +228,6 @@ nav {             //Height:440px
     box-shadow: 0 4px 4px #d9d9d9;
     &__check:hover {
       display:flex;
-      border: 1px solid black;
       transform: translateX(-60px);
     }
   }

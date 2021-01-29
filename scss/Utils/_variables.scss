@@ -8,10 +8,10 @@ $color-accent:#fff;
 $color-bg:#f6f6f6;
 $color-hover:#f5edff;
 
-$btn-mods: (
-    active: (color-gradient,),
+$hearth: (
+    active: ($color-primary,),
     middle: ($color-tertiary,),
-    inactive: ($color-four,)
+    inactive: ($color-accent,)
     );
 
 $breakpoint:(

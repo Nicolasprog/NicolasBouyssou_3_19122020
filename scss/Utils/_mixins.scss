@@ -10,9 +10,19 @@
     }
 }
 
-// @mixin sizeauto ($breakpoint) {
-//    @if $breakpoint == desktop {
-//       @media screen and (min-width: 980px) {
-//        @content;}
-//    }
-//}
+// @mixin favoris($map){
+//     @if $hearth == active {
+//         .selected {
+//             color:$color-primary;}
+//     }
+//     @else if $hearth == inactive {
+//         .unselected {
+//             color:$color-accent;}
+//     }
+// }
+
+//  @mixin sizeauto ($breakpoint) {
+//     @if $breakpoint == desktop {
+//        @media screen and (min-width: 980px) {
+//         @content;}
+//     }
