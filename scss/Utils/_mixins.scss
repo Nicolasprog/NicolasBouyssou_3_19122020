@@ -6,8 +6,7 @@
 @mixin btn-mods ($map){
     @each $mod,$val in $map {
         &--#{$mod}{
-        background-color:$val;
-        }
+        background-color:$val;}
     }
 }
 

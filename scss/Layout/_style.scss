@@ -43,6 +43,11 @@ header {
     padding-top: 70px;
     margin-top: 15px;
   }
+  @media screen and (min-width:980px) {
+    .search:hover {
+      transform:scale(1.03);
+    }
+  }
 }
 
 nav {             //Height:440px
@@ -53,7 +58,8 @@ nav {             //Height:440px
   height: auto;
   font-weight: bold;
   h2 {
-    padding-left: 20px;
+    margin-bottom: 30px;
+    padding-left:20px;
   }
   ul {
     margin: 0%;
@@ -185,7 +191,7 @@ nav {             //Height:440px
   margin: 0 0 50px 50px;
   i {
     position: absolute;
-    right: 30px;
+    right: 15%;
     top: 30px;
     font-size: 1.9em;
   }
