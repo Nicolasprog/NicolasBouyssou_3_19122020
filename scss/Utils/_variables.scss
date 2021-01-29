@@ -6,27 +6,13 @@ $color-four:#0a8c6d;
 $color-initial:#000;
 $color-accent:#fff;
 $color-bg:#f6f6f6;
+$color-hover:#f5edff;
 
 $btn-mods: (
-    pink: ($color-secondary,),
-    blue: ($color-tertiary,),
-    black: ($color-four,)
+    active: (color-gradient,),
+    middle: ($color-tertiary,),
+    inactive: ($color-four,)
     );
 
 $breakpoint:(
-    mobile:980px);
-
-$txt-input-palette: (
-      active: (
-          bg: $color-bg,
-          border: $color-accent,
-          txt: $color-initial,),
-      focus: (
-          bg: $color-accent,
-          border: $color-accent,
-          txt: $color-initial,),
-      invalid: (
-          bg: $color-accent,
-          border: $color-accent,
-          txt: $color-initial,)
-);
+    desktop:980px);

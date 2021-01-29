@@ -11,7 +11,9 @@
     }
 }
 
-// @mixin mobile-only {
-//       @media screen and (min-width: map-get($breakpoints, mobile)){
-//           @content;}
-// }
+// @mixin sizeauto ($breakpoint) {
+//    @if $breakpoint == desktop {
+//       @media screen and (min-width: 980px) {
+//        @content;}
+//    }
+//}
