@@ -6,13 +6,13 @@ footer {
     .Logo {
     display:flex;
     padding-top:20px;
-    margin-bottom:20px;
+    margin-bottom:15px;
     font-size:x-large;
     color:$color-accent;}
     .Category {
         padding-bottom: 30px;}
     a {
-        font-size:20px;
+        font-size:19px;
         color:$color-accent;
         margin-bottom: 20px;}
     p {
@@ -23,9 +23,5 @@ footer {
         footer,p,a,.Logo {
             margin-left: 40%;
         }
-        }
+    }
 }
-
-p {
-    margin:0%;
-    padding:0%;}

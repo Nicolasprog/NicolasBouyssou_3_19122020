@@ -2,13 +2,13 @@
 
 @mixin color-gradient {
     background:linear-gradient(160deg,$color-secondary,$color-primary);}
-    
-@mixin btn-mods ($map){
-    @each $mod,$val in $map {
-        &--#{$mod}{
-        background-color:$val;}
-    }
-}
+
+@mixin top-menu {
+    background-clip:border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;}
 
 //  @mixin sizeauto ($breakpoint) {
 //     @if $breakpoint == desktop {

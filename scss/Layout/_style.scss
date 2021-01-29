@@ -1,14 +1,15 @@
 /*HEADER*/
 header {
-  height: 60px;
-  box-shadow: 0px 5px 5px 0 #818080;
-}
+  height: 60px;}
+.Header-acceuil {
+  height:60px;
+  box-shadow: 0px 5px 5px 0 #818080;}
 
 .Logo {
   font-weight: bold;
   font-size: xx-large;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 7px;
   i {
     position: absolute;
     top: 27px;
@@ -18,9 +19,10 @@ header {
 }
 
 #location {
-  text-align: center;
-  margin-top: 4px;
-  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
   font-weight: bold;
   height: 50px;
   i {
@@ -45,6 +47,7 @@ header {
   }
   @media screen and (min-width:980px) {
     .search:hover {
+      filter:brightness(95%);
       transform:scale(1.03);
     }
   }
@@ -112,27 +115,32 @@ nav {             //Height:440px
   }
 }
 
+.menu-img-1{
+  background-image: url(../images/restaurants/Lapalettedugout.png);
+  @include top-menu;}
+.menu-img-2{
+  background-image: url(../images/restaurants/Lanoteenchantée.png);
+  @include top-menu;}
+.menu-img-3{
+  background-image: url(../images/restaurants/Alafrançaise.png);
+  @include top-menu;}
+.menu-img-4{
+  background-image: url(../images/restaurants/Ledélicedessens.png);
+  @include top-menu;}
+
+header {
+  .menu_1 {
+    box-shadow: none;}
+}
 #Menu-1,
 #Menu-2,
 #Menu-3,
 #Menu-4 {
   position: relative;
-  border-radius: 20px 20px 0 0;
-  margin-top: 260px;
+  border-radius: 60px 60px 0 0;
   width: 100%;
+  margin-top: -50px;
   background-color: $color-bg;
-  .Logo{
-    box-shadow: none;
-  }
-  .img-menu {
-    img {
-      position: absolute;
-      top: 0px;
-      margin-top: -260px;
-      height:270px;
-      width:100%;
-    }
-  }
 }
 
 .Tuiles {
@@ -179,14 +187,13 @@ nav {             //Height:440px
     top: 15px;
     font-size: 1.8em;
     &:hover {
-      color:$color-primary;
+      icon:$color-primary;
     }
   }
   @media screen and (min-width:980px) {
     &:hover {
       transform:scale(1.03);
     }
-    flex-wrap: wrap;
     width:50%;
     justify-content:center;
   }
