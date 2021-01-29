@@ -188,7 +188,7 @@ header {
     top: 15px;
     font-size: 1.8em;
     &:hover {
-      icon:$color-primary;
+      background:$color-primary;
     }
   }
   @media screen and (min-width:980px) {
