@@ -29,7 +29,6 @@ header {
 body {
   width:100%;
   margin:0 auto;}
-
 #bloc-page {
   max-width: 768px;
   @media screen and (min-width: 981px) {
@@ -45,9 +44,16 @@ body {
     margin-top: 15px;
   }
   @media screen and (min-width:980px) {
-    .search:hover {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin:0 20px 0 20px;
+    .search {
+      height: 50px;
+    &:hover {
       filter:brightness(95%);
       transform:scale(1.03);
+      }
     }
   }
 }
@@ -99,8 +105,11 @@ nav {             //Height:440px
         color:$color-primary;
       }
       @media screen and (min-width: 980px) {
-        ul {
-          width:50%;
+        h2 {
+          align-content: center;
+        }
+        li {
+          height: 30px;
         }
       }
     }
@@ -179,7 +188,7 @@ nav {             //Height:440px
     top: 15px;
     font-size: 1.8em;
     &:hover {
-      background:$color-primary;
+      color:$color-primary;
     }
   }
   @media screen and (min-width:980px) {

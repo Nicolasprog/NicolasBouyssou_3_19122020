@@ -55,7 +55,7 @@ p {
   font-family: "Roboto", Arial, Sans-serif;
 }
 
-.Logo {
+h1, h2, .Logo {
   font-family: "Shrikhand", Arial, Sans-serif;
 }
 
@@ -126,6 +126,15 @@ body {
   margin-top: 15px;
 }
 @media screen and (min-width: 980px) {
+  #title {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 0 20px 0 20px;
+  }
+  #title .search {
+    height: 50px;
+  }
   #title .search:hover {
     filter: brightness(95%);
     transform: scale(1.03);
@@ -183,8 +192,11 @@ nav li .nav-i:hover {
   color: #9356DC;
 }
 @media screen and (min-width: 980px) {
-  nav li .nav-i ul {
-    width: 50%;
+  nav li .nav-i h2 {
+    align-content: center;
+  }
+  nav li .nav-i li {
+    height: 30px;
   }
 }
 
@@ -286,7 +298,7 @@ nav li .nav-i:hover {
   font-size: 1.8em;
 }
 .Tuiles .heart:hover {
-  background: #9356DC;
+  color: #9356DC;
 }
 @media screen and (min-width: 980px) {
   .Tuiles {
