@@ -1,19 +1,16 @@
 /*HEADER*/
-.header-acceuil {
-  height:60px;
-  box-shadow: 0px 5px 5px 0 #818080;}
 header {
-  height: 60px;}
+  box-shadow: 0px 5px 5px 0 #818080;
+  position: relative;}
 
 .Logo {
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 35px;
   text-align: center;
-  padding-top: 7px;
   i {
     position: absolute;
-    top: 27px;
-    left: 100px;
+    top: 15px;
+    left: 15%;
     font-size: 25px;
   }
 }
@@ -21,17 +18,18 @@ header {
 #location {
   display: flex;
   justify-content: center;
-  align-items: center;
   background: #eaeaea;
   font-weight: bold;
-  margin-top: 5px;
-  height: 50px;
   i {
     padding-right: 10px;
   }
 }
 /*FIN HEADER*/
 /*BODY*/
+body {
+  width:100%;
+  margin:0 auto;}
+
 #bloc-page {
   max-width: 768px;
   @media screen and (min-width: 981px) {
@@ -108,14 +106,6 @@ nav {             //Height:440px
     }
   }
 }
-
-#Accueil {
-  margin-bottom: 65px;
-  h2 {
-    padding-left: 20px;
-  }
-}
-
 .menu-img-1{
   background-image: url(../images/restaurants/Lapalettedugout.png);
   @include top-menu;}
@@ -129,9 +119,10 @@ nav {             //Height:440px
   background-image: url(../images/restaurants/Ledélicedessens.png);
   @include top-menu;}
 
-header {
-  .menu_1 {
-    box-shadow: none;}
+#Accueil {
+  margin-bottom: 65px;
+  h2 {
+    padding-left: 20px;}
 }
 #Menu-1,
 #Menu-2,
@@ -203,11 +194,12 @@ header {
 #title-heart {
   display: flex;
   position: relative;
-  margin: 0 0 50px 50px;
+  margin: 0 0 50px 5%;
+  padding-top: 20px;
   i {
     position: absolute;
     right: 15%;
-    top: 30px;
+    top: 50px;
     font-size: 1.9em;
   }
   h1 {
