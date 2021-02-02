@@ -63,7 +63,7 @@ h1, h2, .Logo {
 .search {
   display: flex;
   width: auto;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 12px;
   color: white;
   border: none;
@@ -194,8 +194,9 @@ nav li .nav-i:hover {
   nav li nav {
     margin-top: 40px;
   }
-  nav li h2 {
-    align-content: center;
+  nav li nav h2 {
+    font-size: 1.5em;
+    justify-content: center;
   }
   nav li li {
     height: 40px;
@@ -257,7 +258,13 @@ nav li .nav-i:hover {
   background-color: #f6f6f6;
 }
 
-.Tuiles {
+@media screen and (min-width: 980px) {
+  .Column {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.Column .Tuiles {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -267,12 +274,12 @@ nav li .nav-i:hover {
   box-shadow: 0px 4px 4px #d9d9d9;
   border-radius: 10px;
 }
-.Tuiles__Description {
+.Column .Tuiles__Description {
   position: relative;
   height: 75px;
   padding-left: 15px;
 }
-.Tuiles--new::after {
+.Column .Tuiles--new::after {
   position: absolute;
   top: 13px;
   right: 13px;
@@ -282,33 +289,32 @@ nav li .nav-i:hover {
   border-radius: 3px;
   content: "Nouveau";
 }
-.Tuiles img {
+.Column .Tuiles img {
   max-height: 175px;
   border-radius: 10px 10px 0 0;
 }
-.Tuiles .title {
+.Column .Tuiles .title {
   margin: 15px 0 0.5em 0;
   font-weight: bold;
 }
-.Tuiles .lieu {
+.Column .Tuiles .lieu {
   margin-top: 0.5em;
   font-weight: normal;
 }
-.Tuiles .heart {
+.Column .Tuiles .heart {
   position: absolute;
   right: 20px;
   top: 15px;
   font-size: 1.8em;
 }
-.Tuiles .heart:hover {
+.Column .Tuiles .heart:hover {
   color: #9356DC;
 }
 @media screen and (min-width: 980px) {
-  .Tuiles {
-    width: 50%;
-    justify-content: center;
+  .Column .Tuiles {
+    width: 40%;
   }
-  .Tuiles:hover {
+  .Column .Tuiles:hover {
     transform: scale(1.03);
   }
 }
