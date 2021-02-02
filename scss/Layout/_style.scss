@@ -1,7 +1,8 @@
 /*HEADER*/
 header {
   box-shadow: 0px 5px 5px 0 #818080;
-  position: relative;}
+  position: relative;
+}
 
 .Logo {
   font-weight: bold;
@@ -27,12 +28,13 @@ header {
 /*FIN HEADER*/
 /*BODY*/
 body {
-  width:100%;
-  margin:0 auto;}
+  width: 100%;
+  margin: 0 auto;}
+
 #bloc-page {
-  max-width: 768px;
+  max-width: 980px;     //Mobile & Tablet
   @media screen and (min-width: 981px) {
-    max-width:100%;
+    max-width: 100%;      //Desktop
   }
 }
 
@@ -40,34 +42,30 @@ body {
   height: 290px;
   text-align: center;
   h1 {
-    padding-top: 70px;
+    padding-top: 60px;
     margin-top: 15px;
   }
-  @media screen and (min-width:980px) {
+  p {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 980px) {
     display: flex;
     flex-direction: column;
     float: left;
-    margin:0 20px 0 20px;
-    .search {
-      height: 50px;
-    &:hover {
-      filter:brightness(95%);
-      transform:scale(1.03);
-      }
-    }
-  }
+    width: 50%;}
 }
 
-nav {             //Height:440px
+
+nav {
+  //Height:440px
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 40px;
   height: auto;
   font-weight: bold;
   h2 {
     margin-bottom: 30px;
-    padding-left:20px;
+    padding-left: 20px;
   }
   ul {
     margin: 0%;
@@ -87,7 +85,8 @@ nav {             //Height:440px
     background-color: $color-bg;
     box-shadow: 0px 4px 4px #d9d9d9;
     &:hover {
-      background-color: $color-hover;}
+      background-color: $color-hover;
+    }
     span {
       position: absolute;
       left: -10px;
@@ -102,36 +101,44 @@ nav {             //Height:440px
     .nav-i {
       width: 40%;
       &:hover {
-        color:$color-primary;
+        color: $color-primary;
       }
-      @media screen and (min-width: 980px) {
-        h2 {
-          align-content: center;
-        }
-        li {
-          height: 30px;
-        }
+    }
+    @media screen and (min-width: 980px) {
+      nav {
+        margin-top: 40px;
+      }
+      h2 {
+        align-content: center;
+      }
+      li {
+        height: 40px;
       }
     }
   }
 }
-.menu-img-1{
+.menu-img-1 {
   background-image: url(../images/restaurants/Lapalettedugout.png);
-  @include top-menu;}
-.menu-img-2{
+  @include top-menu;
+}
+.menu-img-2 {
   background-image: url(../images/restaurants/Lanoteenchantée.png);
-  @include top-menu;}
-.menu-img-3{
+  @include top-menu;
+}
+.menu-img-3 {
   background-image: url(../images/restaurants/Alafrançaise.png);
-  @include top-menu;}
-.menu-img-4{
+  @include top-menu;
+}
+.menu-img-4 {
   background-image: url(../images/restaurants/Ledélicedessens.png);
-  @include top-menu;}
+  @include top-menu;
+}
 
 #Accueil {
   margin-bottom: 65px;
   h2 {
-    padding-left: 20px;}
+    padding-left: 20px;
+  }
 }
 #Menu-1,
 #Menu-2,
@@ -140,6 +147,7 @@ nav {             //Height:440px
   position: relative;
   border-radius: 60px 60px 0 0;
   width: 100%;
+  height:100%;
   margin-top: -50px;
   background-color: $color-bg;
 }
@@ -188,22 +196,22 @@ nav {             //Height:440px
     top: 15px;
     font-size: 1.8em;
     &:hover {
-      color:$color-primary;
+      color: $color-primary;
     }
   }
-  @media screen and (min-width:980px) {
+  @media screen and (min-width: 980px) {
     &:hover {
-      transform:scale(1.03);
+      transform: scale(1.03);
     }
-    width:50%;
-    justify-content:center;
+    width: 50%;
+    justify-content: center;
   }
 }
 
 #title-heart {
   display: flex;
   position: relative;
-  margin: 0 0 50px 5%;
+  margin: 0 0 40px 5%;
   padding-top: 20px;
   i {
     position: absolute;
@@ -236,25 +244,25 @@ nav {             //Height:440px
     background-color: $color-accent;
     box-shadow: 0 4px 4px #d9d9d9;
     &__check:hover {
-      display:flex;
+      display: flex;
       transform: translateX(-60px);
     }
   }
   .Description-palette {
     padding-left: 13px;
-  }
-  .title {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  .Description-price {
-    margin-top: 12px;
-  }
-  .Description-price span {
-    font-weight: bold;
-    position: absolute;
-    right: 3%;
-    bottom: 10px;
+    .title {
+      font-size: 1.15em;
+      margin: 10px 0;
+    }
+    p.Description-price {
+      margin-top: 15px;
+    }
+    .Description-price span {
+      font-weight: bold;
+      position: absolute;
+      right: 3%;
+      bottom: 10px;
+    }
   }
 }
 

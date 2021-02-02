@@ -61,16 +61,20 @@ h1, h2, .Logo {
 
 /*Bloc spécifiques button etc...*/
 .search {
-  display: block;
-  height: 40px;
-  margin: 40px auto;
-  padding: 0 20px;
+  display: flex;
+  width: auto;
+  margin: 20px auto;
+  padding: 12px;
   color: white;
   border: none;
   outline: none;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0 #d9d9d9;
   background: linear-gradient(160deg, #FF79DA, #9356DC);
+}
+.search:hover {
+  filter: brightness(95%);
+  transform: scale(1.03);
 }
 
 /*HEADER*/
@@ -109,7 +113,7 @@ body {
 }
 
 #bloc-page {
-  max-width: 768px;
+  max-width: 980px;
 }
 @media screen and (min-width: 981px) {
   #bloc-page {
@@ -122,22 +126,18 @@ body {
   text-align: center;
 }
 #title h1 {
-  padding-top: 70px;
+  padding-top: 60px;
   margin-top: 15px;
+}
+#title p {
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 980px) {
   #title {
     display: flex;
     flex-direction: column;
     float: left;
-    margin: 0 20px 0 20px;
-  }
-  #title .search {
-    height: 50px;
-  }
-  #title .search:hover {
-    filter: brightness(95%);
-    transform: scale(1.03);
+    width: 50%;
   }
 }
 
@@ -145,7 +145,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 40px;
   height: auto;
   font-weight: bold;
 }
@@ -192,11 +191,14 @@ nav li .nav-i:hover {
   color: #9356DC;
 }
 @media screen and (min-width: 980px) {
-  nav li .nav-i h2 {
+  nav li nav {
+    margin-top: 40px;
+  }
+  nav li h2 {
     align-content: center;
   }
-  nav li .nav-i li {
-    height: 30px;
+  nav li li {
+    height: 40px;
   }
 }
 
@@ -206,7 +208,7 @@ nav li .nav-i:hover {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 
 .menu-img-2 {
@@ -215,7 +217,7 @@ nav li .nav-i:hover {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 
 .menu-img-3 {
@@ -224,7 +226,7 @@ nav li .nav-i:hover {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 
 .menu-img-4 {
@@ -233,7 +235,7 @@ nav li .nav-i:hover {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 
 #Accueil {
@@ -250,6 +252,7 @@ nav li .nav-i:hover {
   position: relative;
   border-radius: 60px 60px 0 0;
   width: 100%;
+  height: 100%;
   margin-top: -50px;
   background-color: #f6f6f6;
 }
@@ -313,7 +316,7 @@ nav li .nav-i:hover {
 #title-heart {
   display: flex;
   position: relative;
-  margin: 0 0 50px 5%;
+  margin: 0 0 40px 5%;
   padding-top: 20px;
 }
 #title-heart i {
@@ -354,14 +357,14 @@ nav li .nav-i:hover {
 .Container-palette .Description-palette {
   padding-left: 13px;
 }
-.Container-palette .title {
-  font-size: 1.2em;
-  margin-top: 10px;
+.Container-palette .Description-palette .title {
+  font-size: 1.15em;
+  margin: 10px 0;
 }
-.Container-palette .Description-price {
-  margin-top: 12px;
+.Container-palette .Description-palette p.Description-price {
+  margin-top: 15px;
 }
-.Container-palette .Description-price span {
+.Container-palette .Description-palette .Description-price span {
   font-weight: bold;
   position: absolute;
   right: 3%;
