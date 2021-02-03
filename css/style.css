@@ -126,7 +126,7 @@ body {
   text-align: center;
 }
 #title h1 {
-  padding-top: 60px;
+  padding-top: 50px;
   margin-top: 15px;
 }
 #title p {
@@ -139,16 +139,18 @@ body {
     float: left;
     width: 50%;
   }
+  #title p {
+    margin: 0 0 10px 0;
+  }
 }
 
 nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: auto;
   font-weight: bold;
 }
 nav h2 {
+  margin-top: 0;
   margin-bottom: 30px;
   padding-left: 20px;
 }
@@ -198,7 +200,7 @@ nav li .nav-i:hover {
     font-size: 1.5em;
     justify-content: center;
   }
-  nav li li {
+  nav li nav li {
     height: 40px;
   }
 }
