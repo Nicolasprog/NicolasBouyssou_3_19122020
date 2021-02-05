@@ -5,12 +5,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 footer {
   width: 100%;
-  padding-left: 50px;
   background: #353535;
   color: white;
+  display: flex;
+}
+footer .conteneur__footer {
+  margin: auto;
 }
 footer .Logo {
-  display: flex;
+  text-align: start;
   padding-top: 20px;
   margin-bottom: 15px;
   font-size: 30px;
@@ -30,12 +33,6 @@ footer p {
 footer i {
   padding-right: 15px;
 }
-@media screen and (min-width: 980px) {
-  footer footer, footer p, footer a, footer .Logo {
-    margin-left: 40%;
-  }
-}
-
 /*PRAMETRE GENERAUX*/
 /*Typographie*/
 a {
@@ -60,12 +57,17 @@ h1, h2, .Logo {
 }
 
 /*Bloc spécifiques button etc...*/
+.conteneur__btn {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .search {
-  display: flex;
-  width: auto;
-  margin: 10px auto;
-  padding: 12px;
+  margin-bottom: 25px;
+  padding: 10px;
   color: white;
+  width: 170px;
+  margin: auto;
   border: none;
   outline: none;
   border-radius: 20px;
@@ -78,9 +80,11 @@ h1, h2, .Logo {
 }
 
 /*HEADER*/
-header {
-  box-shadow: 0px 5px 5px 0 #818080;
+.header {
   position: relative;
+}
+.header--shadow-accueil {
+  box-shadow: 0px 5px 5px 0 #818080;
 }
 
 .Logo {
@@ -136,12 +140,25 @@ body {
   #title {
     display: flex;
     flex-direction: column;
-    float: left;
     width: 50%;
   }
   #title p {
     margin: 0 0 10px 0;
   }
+}
+
+@media screen and (min-width: 980px) {
+  .conteneur-debut {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+.conteneur-debut #title, .conteneur-debut nav {
+  width: 50%;
+}
+.conteneur-debut #title h1 {
+  padding: 0;
 }
 
 nav {
@@ -150,9 +167,8 @@ nav {
   font-weight: bold;
 }
 nav h2 {
-  margin-top: 0;
+  margin: auto;
   margin-bottom: 30px;
-  padding-left: 20px;
 }
 nav ul {
   margin: 0%;
@@ -317,7 +333,7 @@ nav li .nav-i:hover {
   background: #9356DC;
   top: 30px;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   transition: all 0.5s;
   border-radius: 50% 50% 0 0;
 }

@@ -1,8 +1,10 @@
 /*HEADER*/
-header {
-  box-shadow: 0px 5px 5px 0 #818080;
+.header {
   position: relative;
-}
+  &--shadow-accueil {
+    box-shadow: 0px 5px 5px 0 #818080;
+  }
+} 
 
 .Logo {
   font-weight: bold;
@@ -55,8 +57,26 @@ body {
     }
     display: flex;
     flex-direction: column;
-    float: left;
+    // float: left;
     width: 50%;
+  }
+}
+
+.conteneur-debut{
+  @media screen and (min-width:980px){
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  #title, nav{
+    width: 50%;
+  }
+
+  #title{
+    h1{
+      padding:0;
+    }
   }
 }
 
@@ -66,9 +86,10 @@ nav {
   flex-direction: column;
   font-weight: bold;
   h2 {
-    margin-top: 0;
+    // margin-top: 0;
+    margin: auto;
     margin-bottom: 30px;
-    padding-left: 20px;
+    // padding-left: 20px;
   }
   ul {
     margin: 0%;
@@ -211,7 +232,7 @@ nav {
         background: $color-primary;
         top: 30px;
         left: 0;
-        z-index: 0;
+        z-index: 1;
         transition: all 0.5s;
         border-radius: 50% 50% 0 0;
       }

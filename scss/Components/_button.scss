@@ -1,18 +1,21 @@
 /*Bloc spécifiques button etc...*/
-
+.conteneur__btn{
+  text-align: center;
+  padding-bottom: 50px;
+}
 .search {
-    display:flex;
-    width:auto;
-    margin: 10px auto;
-    padding:12px;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px 0 #d9d9d9;
-    @include color-gradient;
-    &:hover {
-        filter: brightness(95%);
-        transform: scale(1.03);
-      }
+  margin-bottom: 25px;
+  padding:10px;
+  color: white;
+  width:170px;
+  margin: auto;
+  border: none;
+  outline:none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0 #d9d9d9;
+  @include color-gradient;
+  &:hover {
+      filter: brightness(95%);
+      transform: scale(1.03);
     }
+  }
