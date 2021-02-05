@@ -303,37 +303,51 @@ nav li .nav-i:hover {
   margin-top: 0.5em;
   font-weight: normal;
 }
-.Column .Tuiles .heart {
+.Column .Tuiles #heart {
   position: absolute;
   right: 20px;
   top: 15px;
   font-size: 1.8em;
 }
-.Column .Tuiles .heart:hover {
-  color: #9356DC;
+.Column .Tuiles #heart:hover {
+  background: #9356DC;
+}
+.Column .Tuiles #heart::before {
+  position: relative;
+  background: #9356DC;
+  top: 30px;
+  left: 0;
+  z-index: 0;
+  transition: all 0.5s;
+  border-radius: 50% 50% 0 0;
+}
+.Column .Tuiles #heart:hover::before {
+  top: 0;
+  border-radius: 0;
 }
 @media screen and (min-width: 980px) {
   .Column .Tuiles {
     width: 40%;
   }
   .Column .Tuiles:hover {
+    transition-duration: 0.5s;
     transform: scale(1.03);
   }
 }
 
-#title-heart {
+.title-heart {
   display: flex;
   position: relative;
   margin: 0 0 40px 5%;
   padding-top: 20px;
 }
-#title-heart i {
+.title-heart #heart {
   position: absolute;
   right: 15%;
   top: 50px;
-  font-size: 1.9em;
+  font-size: 2em;
 }
-#title-heart h1 {
+.title-heart h1 {
   font-size: 30px;
 }
 

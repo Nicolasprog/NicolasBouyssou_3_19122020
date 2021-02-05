@@ -198,18 +198,32 @@ nav {
       margin-top: 0.5em;
       font-weight: normal;
     }
-    .heart {
+    #heart {
       position: absolute;
       right: 20px;
       top: 15px;
       font-size: 1.8em;
       &:hover {
-        color: $color-primary;
+        background: $color-primary;
+      }
+      &::before {
+        position: relative;
+        background: $color-primary;
+        top: 30px;
+        left: 0;
+        z-index: 0;
+        transition: all 0.5s;
+        border-radius: 50% 50% 0 0;
+      }
+      &:hover::before {
+        top: 0;
+        border-radius: 0;
       }
     }
 
     @media screen and (min-width: 980px) {
       &:hover {
+        transition-duration: 0.5s;
         transform: scale(1.03);
       }
       width: 40%;
@@ -217,16 +231,16 @@ nav {
   }
 }
 
-#title-heart {
+.title-heart {
   display: flex;
   position: relative;
   margin: 0 0 40px 5%;
   padding-top: 20px;
-  i {
+  #heart {
     position: absolute;
     right: 15%;
     top: 50px;
-    font-size: 1.9em;
+    font-size: 2em;
   }
   h1 {
     font-size: 30px;
