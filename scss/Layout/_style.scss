@@ -204,6 +204,10 @@ nav {
         content: "Nouveau";
       }
     }
+    &:hover {
+      transition-duration: 0.5s;
+      transform: scale(1.03);
+    }
     img {
       max-height: 175px;
       border-radius: 10px 10px 0 0;
@@ -221,22 +225,6 @@ nav {
       right: 20px;
       top: 15px;
       font-size: 1.8em;
-      &:hover {
-        background: $color-primary;
-      }
-      &::before {
-        position: relative;
-        background: $color-primary;
-        top: 30px;
-        left: 0;
-        z-index: 1;
-        transition: all 0.5s;
-        border-radius: 50% 50% 0 0;
-      }
-      &:hover::before {
-        top: 0;
-        border-radius: 0;
-      }
     }
 
     @media screen and (min-width: 980px) {
@@ -246,6 +234,16 @@ nav {
       }
       width: 40%;
     }
+  }
+}
+
+#heart {
+  transform: translateY(1);
+  &:hover {
+    transform-origin: center bottom;
+    transform: translateY(0);
+    transition-duration: 2s;
+    background-color: $color-primary;
   }
 }
 

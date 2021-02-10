@@ -78,7 +78,7 @@ h1, h2, .Logo {
 }
 .search:hover {
   filter: brightness(95%);
-  transform: scale(1.03);
+  transition-duration: 1s;
 }
 
 /*HEADER*/
@@ -316,6 +316,10 @@ nav li i {
   border-radius: 3px;
   content: "Nouveau";
 }
+.Column .Tuiles:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.03);
+}
 .Column .Tuiles img {
   max-height: 175px;
   border-radius: 10px 10px 0 0;
@@ -334,22 +338,6 @@ nav li i {
   top: 15px;
   font-size: 1.8em;
 }
-.Column .Tuiles #heart:hover {
-  background: #9356DC;
-}
-.Column .Tuiles #heart::before {
-  position: relative;
-  background: #9356DC;
-  top: 30px;
-  left: 0;
-  z-index: 1;
-  transition: all 0.5s;
-  border-radius: 50% 50% 0 0;
-}
-.Column .Tuiles #heart:hover::before {
-  top: 0;
-  border-radius: 0;
-}
 @media screen and (min-width: 980px) {
   .Column .Tuiles {
     width: 40%;
@@ -358,6 +346,16 @@ nav li i {
     transition-duration: 0.5s;
     transform: scale(1.03);
   }
+}
+
+#heart {
+  transform: translateY(1);
+}
+#heart:hover {
+  transform-origin: center bottom;
+  transform: translateY(0);
+  transition-duration: 2s;
+  background-color: #9356DC;
 }
 
 .title-heart {

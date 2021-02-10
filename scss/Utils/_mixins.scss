@@ -1,7 +1,8 @@
 /*MIXINS*/
 
 @mixin color-gradient {
-    background:linear-gradient(160deg,$color-secondary,$color-primary);}
+    background:linear-gradient(160deg,$color-secondary,$color-primary);
+}
 
 @mixin top-menu {
     background-clip:border-box;
