@@ -348,14 +348,23 @@ nav li i {
   }
 }
 
-#heart {
+#heart i {
   transform: translateY(1);
+  position: relative;
 }
-#heart:hover {
-  transform-origin: center bottom;
+#heart i:hover {
   transform: translateY(0);
+}
+#heart i:hover ::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   transition-duration: 2s;
   background-color: #9356DC;
+  border-radius: 50% 50% 0 0;
 }
 
 .title-heart {

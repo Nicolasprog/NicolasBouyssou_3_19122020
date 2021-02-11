@@ -237,13 +237,22 @@ nav {
   }
 }
 
-#heart {
+#heart i {
   transform: translateY(1);
+  position: relative;
   &:hover {
-    transform-origin: center bottom;
     transform: translateY(0);
-    transition-duration: 2s;
-    background-color: $color-primary;
+    ::before {
+      content:"";
+      position: absolute;
+      top:32px;
+      left:0;
+      right:0;
+      bottom:0;
+      transition-duration: 2s;
+      background-color: $color-primary;
+      border-radius: 50% 50% 0 0;
+    }
   }
 }
 
