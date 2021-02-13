@@ -3,10 +3,9 @@
     position:fixed;
     height: 100%;
     width: 100%;
-    opacity: 0.8;
     background: $color-primary;
-    transform:scale(0);
-    animation:spinner 5s;
+    transform: scale(0);
+    animation:charging 5s;
     z-index: 999;
   }
   .loader-inner {
