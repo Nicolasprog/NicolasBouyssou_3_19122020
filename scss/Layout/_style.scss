@@ -140,6 +140,9 @@ nav {
   margin-bottom: 65px;
   h2 {
     padding-left: 20px;
+    @media screen and (min-width: 980px) {
+      padding-left: 5%;
+    }
   }
 }
 #Menu-1,
