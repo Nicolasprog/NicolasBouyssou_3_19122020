@@ -1,20 +1,36 @@
-                                                                        /*PRAMETRE GENERAUX*/   /*Typographie*/
+/*PRAMETRE GENERAUX*/ /*Typographie*/
 
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 
-a {                                                                 
-    text-decoration: none;
-    color:#000;}
+body {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 980px; //Mobile & Tablet
+  @media screen and (min-width: 981px) {
+    max-width: 100%; //Desktop
+  }
+}
 
-img { 
-    object-fit: cover;}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  object-fit: cover;
+}
 
 .title {
-    font-weight: bold;}
+  font-weight: bold;
+}
 
 p {
-    font-family: 'Roboto', Arial, Sans-serif;}
+  font-family: "Roboto", Arial, Sans-serif;
+}
 
-h1,h2,.Logo {
-    font-family: 'Shrikhand', Arial, Sans-serif;}
+h1,
+h2,
+.Logo {
+  font-family: "Shrikhand", Arial, Sans-serif;
+}

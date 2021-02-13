@@ -1,11 +1,4 @@
-/*HEADER*/
-.header {
-  position: relative;
-  &--shadow-accueil {
-    box-shadow: 0px 5px 5px 0 #818080;
-  }
-}
-
+// Logo 
 .Logo {
   font-weight: bold;
   font-size: 35px;
@@ -25,19 +18,6 @@
   font-weight: bold;
   i {
     padding-right: 10px;
-  }
-}
-/*FIN HEADER*/
-/*BODY*/
-body {
-  width: 100%;
-  margin: 0 auto;
-}
-
-#bloc-page {
-  max-width: 980px; //Mobile & Tablet
-  @media screen and (min-width: 981px) {
-    max-width: 100%; //Desktop
   }
 }
 
