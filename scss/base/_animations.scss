@@ -50,18 +50,18 @@
 
   /* PALETTES */
   .Palettte:nth-child(1) {
-    -webkit-animation: open-menu 3s 200ms backwards ease-in-out;
-    animation: open-menu 3s 200ms backwards ease-in-out;
+    -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
+    animation: open-menu 1s 200ms backwards ease-in-out;
   }
   .Palette:nth-child(2) {
-    -webkit-animation: open-menu 3s 300ms backwards ease-in-out;
-    animation: open-menu 3s 300ms backwards ease-in-out;
+    -webkit-animation: open-menu 1s 100ms backwards ease-in-out;
+    animation: open-menu 1s 300ms backwards ease-in-out;
   }
   .Palette:nth-child(3) {
-    -webkit-animation: open-menu 3s 400ms backwards ease-in-out;
-    animation: open-menu 3s 400ms backwards ease-in-out;
+    -webkit-animation: open-menu 1s 150ms backwards ease-in-out;
+    animation: open-menu 1s 400ms backwards ease-in-out;
   }
   .Palette:nth-child(4) {
-    -webkit-animation: open-menu 3s 500ms backwards ease-in-out;
-    animation: open-menu 3s 500ms backwards ease-in-out;
+    -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
+    animation: open-menu 1s 500ms backwards ease-in-out;
   }

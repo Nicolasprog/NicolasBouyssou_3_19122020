@@ -6,7 +6,7 @@
   i {
     position: absolute;
     top: 15px;
-    left: 15%;
+    left: 10%;
     font-size: 25px;
   }
 }
@@ -24,30 +24,26 @@
 .conteneur-desktop {
   @media screen and (min-width: 980px) {
     display: flex;
-    justify-content: center;
     padding-top: 50px;
   }
   #title {
     margin-top: 50px;
-    height: 200px;
+    height: 190px;
     text-align: center;
     h1 {
-      margin-top: 0;
+      margin: 0 0 25px 0;
     }
     p {
-      margin-bottom: 40px;
+      margin: 0 0 40px 0;
     }
     @media screen and (min-width: 980px) {
       h1 {
-        margin-top: 0;
-        padding: 0;
+        margin-bottom: 30px;
       }
       p {
-        margin: 10px 0 40px 0;
+        margin-bottom: 40px;
       }
-      display: flex;
       flex-direction: column;
-      height: 250px;
       margin-top: 0;
       width: 50%;
     }
@@ -80,7 +76,8 @@ nav {
     box-shadow: 0px 4px 4px #d9d9d9;
     &:hover {
       background-color: $color-hover;
-      &,.nav-i:hover {
+      &,
+      .nav-i:hover {
         color: $color-primary;
       }
     }
@@ -130,7 +127,7 @@ nav {
 }
 
 #Accueil {
-  margin-bottom: 65px;
+  margin-bottom: 40px;
   h2 {
     padding-left: 20px;
     @media screen and (min-width: 980px) {
@@ -240,7 +237,7 @@ nav {
   padding-top: 20px;
   #heart {
     position: absolute;
-    right: 15%;
+    right: 8%;
     top: 50px;
     font-size: 2em;
   }
@@ -260,7 +257,6 @@ nav {
   }
   .Palette {
     display: flex;
-    width: 90%;
     height: 70px;
     padding: 5px;
     position: relative;
@@ -268,25 +264,30 @@ nav {
     border-radius: 10px;
     background-color: $color-accent;
     box-shadow: 0 4px 4px #d9d9d9;
-    &__check {
-      display: flex;
-      position: relative;
+    transform: translateX(0);
+    &--check {
+      &::before:hover {
+        position: relative;
+        right: 0;
+        width: 60px;
+        transform: translateX(-60px);
+      }
     }
-  }
-  .Description-palette {
-    padding-left: 13px;
-    .title {
-      font-size: 1.15em;
-      margin: 10px 0;
-    }
-    p.Description-price {
-      margin-top: 15px;
-    }
-    .Description-price span {
-      font-weight: bold;
-      position: absolute;
-      right: 3%;
-      bottom: 10px;
+    .Description-palette {
+      padding-left: 13px;
+      .title {
+        font-size: 1.15em;
+        margin: 10px 0 0 0;
+      }
+      .Description-price {
+        margin: 10px 0 15px 0;
+        span {
+          font-weight: bold;
+          position: absolute;
+          right: 3%;
+          bottom: 15px;
+        }
+      }
     }
   }
 }

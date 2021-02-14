@@ -43,18 +43,22 @@
 /* ANIMATIONS PALETTES */
 @-webkit-keyframes open-menu {
   0% {
-    -webkit-transform: translateX(0);
+    opacity: 0;
+    -webkit-transform: translateY(30%);
   }
   100% {
-    -webkit-transform: translateX(120%);
+    opacity: 1;
+    -webkit-transform: translateY(0);
   }
 }
 @keyframes open-menu {
   0% {
-    transform: translateX(0);
+    opacity: 0;
+    transform: translateY(30%);
   }
   100% {
-    transform: translateX(120%);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /* ANIMATIONS CHECK */
@@ -206,27 +210,27 @@ h2,
 
 /* PALETTES */
 .Palettte:nth-child(1) {
-  -webkit-animation: open-menu 3s 200ms backwards ease-in-out;
-  animation: open-menu 3s 200ms backwards ease-in-out;
+  -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
+  animation: open-menu 1s 200ms backwards ease-in-out;
 }
 
 .Palette:nth-child(2) {
-  -webkit-animation: open-menu 3s 300ms backwards ease-in-out;
-  animation: open-menu 3s 300ms backwards ease-in-out;
+  -webkit-animation: open-menu 1s 100ms backwards ease-in-out;
+  animation: open-menu 1s 300ms backwards ease-in-out;
 }
 
 .Palette:nth-child(3) {
-  -webkit-animation: open-menu 3s 400ms backwards ease-in-out;
-  animation: open-menu 3s 400ms backwards ease-in-out;
+  -webkit-animation: open-menu 1s 150ms backwards ease-in-out;
+  animation: open-menu 1s 400ms backwards ease-in-out;
 }
 
 .Palette:nth-child(4) {
-  -webkit-animation: open-menu 3s 500ms backwards ease-in-out;
-  animation: open-menu 3s 500ms backwards ease-in-out;
+  -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
+  animation: open-menu 1s 500ms backwards ease-in-out;
 }
 
 /*Bloc spécifiques button etc...*/
-.conteneur__btn {
+.Conteneur__btn {
   text-align: center;
   padding-bottom: 50px;
 }
@@ -245,7 +249,7 @@ h2,
   background: linear-gradient(160deg, #FF79DA, #9356DC);
 }
 .search:hover {
-  filter: brightness(85%);
+  filter: brightness(87%);
   transition-duration: 1s;
 }
 
@@ -265,7 +269,7 @@ h2,
 .Logo i {
   position: absolute;
   top: 15px;
-  left: 15%;
+  left: 10%;
   font-size: 25px;
 }
 
@@ -282,35 +286,31 @@ h2,
 @media screen and (min-width: 980px) {
   .conteneur-desktop {
     display: flex;
-    justify-content: center;
     padding-top: 50px;
   }
 }
 .conteneur-desktop #title {
   margin-top: 50px;
-  height: 200px;
+  height: 190px;
   text-align: center;
 }
 .conteneur-desktop #title h1 {
-  margin-top: 0;
+  margin: 0 0 25px 0;
 }
 .conteneur-desktop #title p {
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
 }
 @media screen and (min-width: 980px) {
   .conteneur-desktop #title {
-    display: flex;
     flex-direction: column;
-    height: 250px;
     margin-top: 0;
     width: 50%;
   }
   .conteneur-desktop #title h1 {
-    margin-top: 0;
-    padding: 0;
+    margin-bottom: 30px;
   }
   .conteneur-desktop #title p {
-    margin: 10px 0 40px 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -343,7 +343,8 @@ nav li {
 nav li:hover {
   background-color: #f5edff;
 }
-nav li:hover, nav li:hover .nav-i:hover {
+nav li:hover,
+nav li:hover .nav-i:hover {
   color: #9356DC;
 }
 nav li .nav-i {
@@ -411,7 +412,7 @@ nav li i {
 }
 
 #Accueil {
-  margin-bottom: 65px;
+  margin-bottom: 40px;
 }
 #Accueil h2 {
   padding-left: 20px;
@@ -525,7 +526,7 @@ nav li i {
 }
 .title-heart #heart {
   position: absolute;
-  right: 15%;
+  right: 8%;
   top: 50px;
   font-size: 2em;
 }
@@ -545,7 +546,6 @@ nav li i {
 }
 .Container-palette .Palette {
   display: flex;
-  width: 90%;
   height: 70px;
   padding: 5px;
   position: relative;
@@ -553,26 +553,29 @@ nav li i {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 4px 4px #d9d9d9;
+  transform: translateX(0);
 }
-.Container-palette .Palette__check {
-  display: flex;
+.Container-palette .Palette--check::before:hover {
   position: relative;
+  right: 0;
+  width: 60px;
+  transform: translateX(-60px);
 }
-.Container-palette .Description-palette {
+.Container-palette .Palette .Description-palette {
   padding-left: 13px;
 }
-.Container-palette .Description-palette .title {
+.Container-palette .Palette .Description-palette .title {
   font-size: 1.15em;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 }
-.Container-palette .Description-palette p.Description-price {
-  margin-top: 15px;
+.Container-palette .Palette .Description-palette .Description-price {
+  margin: 10px 0 15px 0;
 }
-.Container-palette .Description-palette .Description-price span {
+.Container-palette .Palette .Description-palette .Description-price span {
   font-weight: bold;
   position: absolute;
   right: 3%;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 /*FIN BODY*/
