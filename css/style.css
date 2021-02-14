@@ -245,7 +245,7 @@ h2,
   background: linear-gradient(160deg, #FF79DA, #9356DC);
 }
 .search:hover {
-  filter: brightness(90%);
+  filter: brightness(85%);
   transition-duration: 1s;
 }
 
@@ -343,11 +343,11 @@ nav li {
 nav li:hover {
   background-color: #f5edff;
 }
+nav li:hover, nav li:hover .nav-i:hover {
+  color: #9356DC;
+}
 nav li .nav-i {
   width: 40%;
-}
-nav li .nav-i:hover {
-  color: #9356DC;
 }
 nav li span {
   position: absolute;
