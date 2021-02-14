@@ -212,17 +212,14 @@ nav {
 }
 
 #heart i {
-  transform: translateY(1);
   position: relative;
+  transform: translateY(0);
   &:hover {
-    transform: translateY(0);
     ::before {
-      content: "";
       position: absolute;
       top: 32px;
-      left: 0;
-      right: 0;
       bottom: 0;
+      transform: translateY(1);
       transition-duration: 2s;
       background-color: $color-primary;
       border-radius: 50% 50% 0 0;
@@ -265,13 +262,8 @@ nav {
     background-color: $color-accent;
     box-shadow: 0 4px 4px #d9d9d9;
     transform: translateX(0);
-    &--check {
-      &::before:hover {
-        position: relative;
-        right: 0;
-        width: 60px;
-        transform: translateX(-60px);
-      }
+    &:hover {
+      width: 90%;
     }
     .Description-palette {
       padding-left: 13px;

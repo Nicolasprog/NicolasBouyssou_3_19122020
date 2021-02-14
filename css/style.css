@@ -500,19 +500,14 @@ nav li i {
 }
 
 #heart i {
-  transform: translateY(1);
   position: relative;
-}
-#heart i:hover {
   transform: translateY(0);
 }
 #heart i:hover ::before {
-  content: "";
   position: absolute;
   top: 32px;
-  left: 0;
-  right: 0;
   bottom: 0;
+  transform: translateY(1);
   transition-duration: 2s;
   background-color: #9356DC;
   border-radius: 50% 50% 0 0;
@@ -555,11 +550,8 @@ nav li i {
   box-shadow: 0 4px 4px #d9d9d9;
   transform: translateX(0);
 }
-.Container-palette .Palette--check::before:hover {
-  position: relative;
-  right: 0;
-  width: 60px;
-  transform: translateX(-60px);
+.Container-palette .Palette:hover {
+  width: 90%;
 }
 .Container-palette .Palette .Description-palette {
   padding-left: 13px;
