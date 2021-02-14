@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*FUNCTIONS VARIABLES PLACEHOLDER ET EXTENSIONS*/
 /*MIXINS*/
-/*  ANIMATIONS  */
+/*  ANIMATIONS LOADER */
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 @keyframes charging {
@@ -10,11 +10,11 @@
     transform: translateX(0);
   }
   85% {
-    opacity: 0.5;
+    opacity: 0.6;
     transform: translateX(0);
   }
   95% {
-    opacity: 0.8;
+    opacity: 0.4;
     -webkit-transform: translateX(100%);
   }
   100% {
@@ -28,16 +28,56 @@
     -webkit-transform: translateX(0);
   }
   85% {
-    opacity: 0.5;
+    opacity: 0.6;
     -webkit-transform: translateX(0);
   }
   95% {
-    opacity: 0.8;
+    opacity: 0.4;
     -webkit-transform: translateX(100%);
   }
   100% {
     opacity: 0;
     -webkit-transform: scale(0), translateX(100%);
+  }
+}
+/* ANIMATIONS PALETTES */
+@-webkit-keyframes open-menu {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(120%);
+  }
+}
+@keyframes open-menu {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+/* ANIMATIONS CHECK */
+@keyframes rotate {
+  0% {
+    transform: translateX(0), rotate(0);
+  }
+  50% {
+    transform: translateX(-50%), rotate(180deg);
+  }
+  100% {
+    transform: translateX(-100%), rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translateX(0), rotate(0);
+  }
+  50% {
+    -webkit-transform: translateX(-50%), rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translateX(-100%), rotate(360deg);
   }
 }
 footer {
@@ -107,6 +147,7 @@ h2,
   font-family: "Shrikhand", Arial, Sans-serif;
 }
 
+/* LOADER */
 .loader {
   position: fixed;
   height: 100%;
@@ -161,6 +202,27 @@ h2,
 .loader-inner span:nth-child(1) {
   -webkit-animation: charging 3s 500ms infinite ease-in-out;
   animation: charging 3s 500ms infinite ease-in-out;
+}
+
+/* PALETTES */
+.Palettte:nth-child(1) {
+  -webkit-animation: open-menu 3s 200ms backwards ease-in-out;
+  animation: open-menu 3s 200ms backwards ease-in-out;
+}
+
+.Palette:nth-child(2) {
+  -webkit-animation: open-menu 3s 300ms backwards ease-in-out;
+  animation: open-menu 3s 300ms backwards ease-in-out;
+}
+
+.Palette:nth-child(3) {
+  -webkit-animation: open-menu 3s 400ms backwards ease-in-out;
+  animation: open-menu 3s 400ms backwards ease-in-out;
+}
+
+.Palette:nth-child(4) {
+  -webkit-animation: open-menu 3s 500ms backwards ease-in-out;
+  animation: open-menu 3s 500ms backwards ease-in-out;
 }
 
 /*Bloc spécifiques button etc...*/
@@ -223,11 +285,6 @@ h2,
     justify-content: center;
     padding-top: 50px;
   }
-  .conteneur-desktop nav h2 {
-    text-align: center;
-    font-size: xx-large;
-    margin-top: 0;
-  }
 }
 .conteneur-desktop #title {
   margin-top: 50px;
@@ -254,17 +311,6 @@ h2,
   }
   .conteneur-desktop #title p {
     margin: 10px 0 40px 0;
-  }
-}
-
-#title,
-nav {
-  width: 100%;
-}
-@media screen and (min-width: 980px) {
-  #title,
-nav {
-    width: 50%;
   }
 }
 
@@ -315,7 +361,15 @@ nav li i {
   margin-right: 5%;
 }
 @media screen and (min-width: 980px) {
-  nav li li {
+  nav {
+    width: 50%;
+  }
+  nav h2 {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0;
+  }
+  nav li {
     height: 40px;
   }
 }
@@ -364,6 +418,7 @@ nav li i {
 }
 @media screen and (min-width: 980px) {
   #Accueil h2 {
+    font-size: xx-large;
     padding-left: 5%;
   }
 }
@@ -499,9 +554,9 @@ nav li i {
   background-color: #fff;
   box-shadow: 0 4px 4px #d9d9d9;
 }
-.Container-palette .Palette__check:hover {
+.Container-palette .Palette__check {
   display: flex;
-  transform: translateX(-60px);
+  position: relative;
 }
 .Container-palette .Description-palette {
   padding-left: 13px;

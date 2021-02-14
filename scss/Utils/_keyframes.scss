@@ -1,15 +1,15 @@
-/*  ANIMATIONS  */
+/*  ANIMATIONS LOADER */
 @keyframes charging {
   0% {
     opacity: 1;
     transform: translateX(0);
   }
   85% {
-    opacity: 0.5;
+    opacity: 0.6;
     transform: translateX(0);
   }
   95% {
-    opacity: 0.8;
+    opacity: 0.4;
     -webkit-transform: translateX(100%);
   }
   100% {
@@ -23,15 +23,56 @@
     -webkit-transform: translateX(0);
   }
   85% {
-    opacity: 0.5;
+    opacity: 0.6;
     -webkit-transform: translateX(0);
   }
   95% {
-    opacity: 0.8;
+    opacity: 0.4;
     -webkit-transform: translateX(100%);
   }
   100% {
     opacity: 0;
     -webkit-transform: scale(0),translateX(100%);
   }
+}
+
+/* ANIMATIONS PALETTES */
+@-webkit-keyframes open-menu {
+    0% {
+        -webkit-transform:translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(120%);
+    }
+}
+@keyframes open-menu {
+    0% {
+        transform:translateX(0);
+    }
+    100% {
+        transform: translateX(120%);
+    }
+}
+/* ANIMATIONS CHECK */
+@keyframes rotate {
+    0% {
+        transform:translateX(0),rotate(0);
+    }
+    50% {
+        transform:translateX(-50%),rotate(180deg);
+    }
+    100% {
+        transform:translateX(-100%),rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform:translateX(0),rotate(0);
+    }
+    50% {
+        -webkit-transform:translateX(-50%),rotate(180deg);
+    }
+    100% {
+        -webkit-transform:translateX(-100%),rotate(360deg);
+    }
 }
