@@ -48,7 +48,30 @@
     animation: charging 3s 500ms infinite ease-in-out;
   }
 
-  /* PALETTES */
+  /* HEART */
+  #heart {
+    transform: translateY(0);
+    i:nth-child(2) {
+      @include color-gradient1;
+      animation: heart 2s;
+      //visibility: hidden;
+    }
+    i:nth-child(1) {
+      animation-name: heart;
+      visibility: visible;
+    }
+  }
+
+  #heart i:nth-child(1) {
+    -webkit-animation: heart 2s 50ms backwards ease-in-out;
+    animation: heart 2s 50ms backwards ease-in-out;
+  }
+  #heart i:nth-child(2) {
+    -webkit-animation: heart 2s 50ms backwards ease-in-out;
+    animation: heart 2s 50ms backwards ease-in-out;
+  }
+
+  /* APPARITION PALETTES */
   .Palettte:nth-child(1) {
     -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
     animation: open-menu 1s 50ms backwards ease-in-out;
@@ -65,3 +88,8 @@
     -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
     animation: open-menu 1s 200ms backwards ease-in-out;
   }
+/* ICONE PALETTE*/
+.Palette-check-icone i{
+  -webkit-animation: pal-icon 3s 200ms backwards ease-in-out;
+  animation: pal-icon 3s 200ms backwards ease-in-out;
+}

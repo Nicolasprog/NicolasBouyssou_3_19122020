@@ -3,6 +3,9 @@
 @mixin color-gradient {
     background:linear-gradient(160deg,$color-secondary,$color-primary);
 }
+@mixin color-gradient1 {
+    color:linear-gradient(150deg,$color-secondary,$color-primary);
+}
 
 @mixin top-menu {
     background-clip:border-box;

@@ -40,6 +40,29 @@
     -webkit-transform: scale(0), translateX(100%);
   }
 }
+/* ANIMATION HEART */
+@keyframes heart {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(50%);
+  }
+  100% {
+    -webkit-transform: translateY(1);
+  }
+}
 /* ANIMATIONS VERTICAL PALETTES */
 @-webkit-keyframes open-menu {
   0% {
@@ -61,10 +84,10 @@
     transform: translateY(0);
   }
 }
-/* ANIMATIONS CHECK */
-@keyframes rotate {
+/* ANIMATIONS ICONE-CHECK */
+@keyframes pal-icon {
   0% {
-    transform: translateX(0), rotate(0);
+    transform: translateX(110%), rotate(0);
   }
   50% {
     transform: translateX(-50%), rotate(180deg);
@@ -73,9 +96,9 @@
     transform: translateX(-100%), rotate(360deg);
   }
 }
-@-webkit-keyframes rotate {
+@-webkit-keyframes pal-icon {
   0% {
-    -webkit-transform: translateX(0), rotate(0);
+    -webkit-transform: translateX(110%), rotate(0);
   }
   50% {
     -webkit-transform: translateX(-50%), rotate(180deg);
@@ -208,7 +231,30 @@ h2,
   animation: charging 3s 500ms infinite ease-in-out;
 }
 
-/* PALETTES */
+/* HEART */
+#heart {
+  transform: translateY(0);
+}
+#heart i:nth-child(2) {
+  color: linear-gradient(150deg, #FF79DA, #9356DC);
+  animation: heart 2s;
+}
+#heart i:nth-child(1) {
+  animation-name: heart;
+  visibility: visible;
+}
+
+#heart i:nth-child(1) {
+  -webkit-animation: heart 2s 50ms backwards ease-in-out;
+  animation: heart 2s 50ms backwards ease-in-out;
+}
+
+#heart i:nth-child(2) {
+  -webkit-animation: heart 2s 50ms backwards ease-in-out;
+  animation: heart 2s 50ms backwards ease-in-out;
+}
+
+/* APPARITION PALETTES */
 .Palettte:nth-child(1) {
   -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
   animation: open-menu 1s 50ms backwards ease-in-out;
@@ -227,6 +273,12 @@ h2,
 .Palette:nth-child(4) {
   -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
   animation: open-menu 1s 200ms backwards ease-in-out;
+}
+
+/* ICONE PALETTE*/
+.Palette-check-icone i {
+  -webkit-animation: pal-icon 3s 200ms backwards ease-in-out;
+  animation: pal-icon 3s 200ms backwards ease-in-out;
 }
 
 /*Bloc spécifiques button etc...*/
@@ -485,7 +537,7 @@ nav li i {
 }
 .Column .Tuiles #heart {
   position: absolute;
-  right: 20px;
+  right: 2%;
   top: 15px;
   font-size: 2em;
 }
@@ -499,16 +551,6 @@ nav li i {
   }
 }
 
-#heart {
-  position: absolute;
-  transform: translateY(0);
-  z-index: 0;
-}
-#heart i:hover {
-  transform: translateY(1);
-  background: #9356DC;
-}
-
 .title-heart {
   display: flex;
   position: relative;
@@ -517,7 +559,7 @@ nav li i {
 }
 .title-heart #heart {
   position: absolute;
-  right: 8%;
+  right: 5%;
   top: 50px;
   font-size: 2em;
 }
@@ -546,7 +588,7 @@ nav li i {
   transform: translateX(0);
 }
 .Container-palette .Palette .Pal-check-icon {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   height: 102%;
   width: 10%;
@@ -558,10 +600,9 @@ nav li i {
   visibility: hidden;
 }
 .Container-palette .Palette .Pal-check-icon i {
-  padding: 5px;
-  padding-top: 40%;
+  animation: pal-icon 3s;
+  padding-top: 37%;
   color: #fff;
-  animation: rotate 3s;
   font-size: 25px;
 }
 @media screen and (min-width: 980px) {

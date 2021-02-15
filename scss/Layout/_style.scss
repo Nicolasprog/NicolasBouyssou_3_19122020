@@ -196,7 +196,7 @@ nav {
     }
     #heart {
       position: absolute;
-      right: 20px;
+      right: 2%;
       top: 15px;
       font-size: 2em;
     }
@@ -210,18 +210,6 @@ nav {
   }
 }
 
-#heart {
-  position: absolute;
-  transform: translateY(0);
-  z-index: 0;
-  i {
-    &:hover {
-      transform: translateY(1);
-      background: $color-primary;
-    }
-  }
-}
-
 .title-heart {
   display: flex;
   position: relative;
@@ -229,7 +217,7 @@ nav {
   padding-top: 20px;
   #heart {
     position: absolute;
-    right: 8%;
+    right: 5%;
     top: 50px;
     font-size: 2em;
   }
@@ -257,7 +245,7 @@ nav {
     box-shadow: 0 4px 4px #d9d9d9;
     transform: translateX(0);
     .Pal-check-icon {
-      display: inline-flex;
+      display: flex;
       justify-content: center;
       height: 102%;
       width: 10%;
@@ -268,10 +256,9 @@ nav {
       background-color: $color-tertiary;
       visibility: hidden;
       i {
-        padding:5px;
-        padding-top: 40%;
+        animation: pal-icon 3s;
+        padding-top: 37%;
         color: $color-accent;
-        animation: rotate 3s;
         font-size: 25px;
         @media screen and (min-width: 980px) {
           padding-top: 20%;

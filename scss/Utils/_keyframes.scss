@@ -36,6 +36,30 @@
   }
 }
 
+/* ANIMATION HEART */
+@keyframes heart {
+  0% {
+    transform:translateY(0);
+  }
+  50% {
+    transform:translateY(50%);
+  }
+  100% {
+    transform:translateY(1);
+  }
+}
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform:translateY(0);
+  }
+  50% {
+    -webkit-transform:translateY(50%);
+  }
+  100% {
+    -webkit-transform:translateY(1);
+  }
+}
+
 /* ANIMATIONS VERTICAL PALETTES */
 @-webkit-keyframes open-menu {
   0% {
@@ -57,10 +81,10 @@
     transform: translateY(0);
   }
 }
-/* ANIMATIONS CHECK */
-@keyframes rotate {
+/* ANIMATIONS ICONE-CHECK */
+@keyframes pal-icon {
   0% {
-    transform: translateX(0), rotate(0);
+    transform: translateX(110%), rotate(0);
   }
   50% {
     transform: translateX(-50%), rotate(180deg);
@@ -69,9 +93,9 @@
     transform: translateX(-100%), rotate(360deg);
   }
 }
-@-webkit-keyframes rotate {
+@-webkit-keyframes pal-icon {
   0% {
-    -webkit-transform: translateX(0), rotate(0);
+    -webkit-transform: translateX(110%), rotate(0);
   }
   50% {
     -webkit-transform: translateX(-50%), rotate(180deg);
