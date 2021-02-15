@@ -40,7 +40,7 @@
     -webkit-transform: scale(0), translateX(100%);
   }
 }
-/* ANIMATIONS PALETTES */
+/* ANIMATIONS VERTICAL PALETTES */
 @-webkit-keyframes open-menu {
   0% {
     opacity: 0;
@@ -158,7 +158,7 @@ h2,
   width: 100%;
   background: #9356DC;
   transform: scale(0);
-  animation: charging 4s;
+  animation: charging 3s;
   z-index: 999;
 }
 
@@ -211,22 +211,22 @@ h2,
 /* PALETTES */
 .Palettte:nth-child(1) {
   -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
-  animation: open-menu 1s 200ms backwards ease-in-out;
+  animation: open-menu 1s 50ms backwards ease-in-out;
 }
 
 .Palette:nth-child(2) {
   -webkit-animation: open-menu 1s 100ms backwards ease-in-out;
-  animation: open-menu 1s 300ms backwards ease-in-out;
+  animation: open-menu 1s 100ms backwards ease-in-out;
 }
 
 .Palette:nth-child(3) {
   -webkit-animation: open-menu 1s 150ms backwards ease-in-out;
-  animation: open-menu 1s 400ms backwards ease-in-out;
+  animation: open-menu 1s 150ms backwards ease-in-out;
 }
 
 .Palette:nth-child(4) {
   -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
-  animation: open-menu 1s 500ms backwards ease-in-out;
+  animation: open-menu 1s 200ms backwards ease-in-out;
 }
 
 /*Bloc spécifiques button etc...*/
@@ -381,7 +381,7 @@ nav li i {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: 560px;
 }
 
 .menu-img-2 {
@@ -390,7 +390,7 @@ nav li i {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: 560px;
 }
 
 .menu-img-3 {
@@ -399,7 +399,7 @@ nav li i {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: 560px;
 }
 
 .menu-img-4 {
@@ -408,7 +408,7 @@ nav li i {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
+  height: 560px;
 }
 
 #Accueil {
@@ -487,7 +487,7 @@ nav li i {
   position: absolute;
   right: 20px;
   top: 15px;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 @media screen and (min-width: 980px) {
   .Column .Tuiles {
@@ -499,18 +499,14 @@ nav li i {
   }
 }
 
-#heart i {
-  position: relative;
-  transform: translateY(0);
-}
-#heart i:hover ::before {
+#heart {
   position: absolute;
-  top: 32px;
-  bottom: 0;
+  transform: translateY(0);
+  z-index: 0;
+}
+#heart i:hover {
   transform: translateY(1);
-  transition-duration: 2s;
-  background-color: #9356DC;
-  border-radius: 50% 50% 0 0;
+  background: #9356DC;
 }
 
 .title-heart {
@@ -540,6 +536,7 @@ nav li i {
   border-bottom: 3px solid #99E2D0;
 }
 .Container-palette .Palette {
+  position: relative;
   height: 70px;
   padding: 5px;
   margin-bottom: 15px;
@@ -548,8 +545,44 @@ nav li i {
   box-shadow: 0 4px 4px #d9d9d9;
   transform: translateX(0);
 }
+.Container-palette .Palette .Pal-check-icon {
+  display: inline-flex;
+  justify-content: center;
+  height: 102%;
+  width: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 10px 0;
+  background-color: #99E2D0;
+  visibility: hidden;
+}
+.Container-palette .Palette .Pal-check-icon i {
+  padding: 5px;
+  padding-top: 40%;
+  color: #fff;
+  animation: rotate 3s;
+  font-size: 25px;
+}
+@media screen and (min-width: 980px) {
+  .Container-palette .Palette .Pal-check-icon i {
+    padding-top: 20%;
+  }
+}
 .Container-palette .Palette:hover {
+  position: relative;
   width: 90%;
+  border-radius: 10px 0 0 10px;
+}
+.Container-palette .Palette:hover .Pal-check-icon {
+  position: absolute;
+  transform: translateX(75px);
+  visibility: visible;
+}
+@media screen and (min-width: 980px) {
+  .Container-palette .Palette:hover .Pal-check-icon {
+    transform: translateX(157px);
+  }
 }
 .Container-palette .Palette .Description-palette {
   padding-left: 13px;

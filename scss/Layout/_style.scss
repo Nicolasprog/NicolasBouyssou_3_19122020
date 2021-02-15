@@ -198,9 +198,8 @@ nav {
       position: absolute;
       right: 20px;
       top: 15px;
-      font-size: 1.8em;
+      font-size: 2em;
     }
-
     @media screen and (min-width: 980px) {
       &:hover {
         transition-duration: 0.5s;
@@ -211,18 +210,14 @@ nav {
   }
 }
 
-#heart i {
-  position: relative;
+#heart {
+  position: absolute;
   transform: translateY(0);
-  &:hover {
-    ::before {
-      position: absolute;
-      top: 32px;
-      bottom: 0;
+  z-index: 0;
+  i {
+    &:hover {
       transform: translateY(1);
-      transition-duration: 2s;
-      background-color: $color-primary;
-      border-radius: 50% 50% 0 0;
+      background: $color-primary;
     }
   }
 }
@@ -253,6 +248,7 @@ nav {
     border-bottom: 3px solid $color-tertiary;
   }
   .Palette {
+    position: relative;
     height: 70px;
     padding: 5px;
     margin-bottom: 15px;
@@ -260,8 +256,42 @@ nav {
     background-color: $color-accent;
     box-shadow: 0 4px 4px #d9d9d9;
     transform: translateX(0);
+    .Pal-check-icon {
+      display: inline-flex;
+      justify-content: center;
+      height: 102%;
+      width: 10%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 0 10px 10px 0;
+      background-color: $color-tertiary;
+      visibility: hidden;
+      i {
+        padding:5px;
+        padding-top: 40%;
+        color: $color-accent;
+        animation: rotate 3s;
+        font-size: 25px;
+        @media screen and (min-width: 980px) {
+          padding-top: 20%;
+        }
+      }
+    }
     &:hover {
+      position: relative;
       width: 90%;
+      border-radius: 10px 0 0 10px;
+      .Pal-check-icon {
+        position: absolute;
+        transform: translateX(75px);
+        visibility: visible;
+        @media screen and (min-width: 980px) {
+          & {
+            transform: translateX(157px);
+          }
+        }
+      }
     }
     .Description-palette {
       padding-left: 13px;
