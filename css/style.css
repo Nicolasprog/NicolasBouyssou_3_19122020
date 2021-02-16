@@ -190,7 +190,7 @@ h2,
   top: 50%;
   position: absolute;
   width: calc(100% - 200px);
-  color: #FFF;
+  color: #fff;
   padding: 0 100px;
   text-align: center;
 }
@@ -232,28 +232,26 @@ h2,
 }
 
 /* HEART */
-#heart {
-  transform: translateY(0);
+#heart:hover i:nth-child(1) {
+  opacity: 0;
 }
-#heart i:nth-child(2) {
-  color: linear-gradient(150deg, #FF79DA, #9356DC);
-  animation: heart 2s;
-}
-#heart i:nth-child(1) {
-  animation-name: heart;
-  visibility: visible;
+#heart:hover i:nth-child(2) {
+  color: #9356DC;
+  opacity: 1;
 }
 
-#heart i:nth-child(1) {
-  -webkit-animation: heart 2s 50ms backwards ease-in-out;
-  animation: heart 2s 50ms backwards ease-in-out;
+i:nth-child(2) {
+  opacity: 0;
 }
 
-#heart i:nth-child(2) {
-  -webkit-animation: heart 2s 50ms backwards ease-in-out;
-  animation: heart 2s 50ms backwards ease-in-out;
-}
-
+/*#heart i:nth-child(1) {
+    -webkit-animation: heart 2s 50ms backwards ease-in-out;
+    animation: heart 2s 50ms backwards ease-in-out;
+  }
+  #heart i:nth-child(2) {
+    -webkit-animation: heart 2s 50ms backwards ease-in-out;
+    animation: heart 2s 50ms backwards ease-in-out;
+  }*/
 /* APPARITION PALETTES */
 .Palettte:nth-child(1) {
   -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
@@ -560,7 +558,7 @@ nav li i {
 .title-heart #heart {
   position: absolute;
   right: 5%;
-  top: 50px;
+  top: 30px;
   font-size: 2em;
 }
 .title-heart h1 {
