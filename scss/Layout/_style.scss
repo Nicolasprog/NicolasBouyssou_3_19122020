@@ -199,17 +199,15 @@ nav {
       right: 1%;
       top: 5px;
       font-size: 2em;
+      & i {
+        animation: heart infinite;
+      }
     }
     @media screen and (min-width: 980px) {
-      &:hover {
-        transition-duration: 0.5s;
-        transform: scale(1.03);
-      }
       width: 40%;
     }
   }
 }
-
 .title-heart {
   display: flex;
   position: relative;
@@ -220,6 +218,9 @@ nav {
     right: 5%;
     top: 30px;
     font-size: 2em;
+    & i:hover {
+      animation: heart 2s;
+    }
   }
   h1 {
     font-size: 30px;
@@ -243,7 +244,6 @@ nav {
     border-radius: 10px;
     background-color: $color-accent;
     box-shadow: 0 4px 4px #d9d9d9;
-    transform: translateX(0);
     .Pal-check-icon {
       display: flex;
       justify-content: center;
@@ -254,15 +254,13 @@ nav {
       right: 0;
       border-radius: 0 10px 10px 0;
       background-color: $color-tertiary;
-      visibility: hidden;
+      transform: translateX(0) rotate(0);
+      //visibility: hidden;
       i {
-        animation: pal-icon 3s;
-        padding-top: 37%;
+        position: absolute;
+        right: 0;
         color: $color-accent;
         font-size: 25px;
-        @media screen and (min-width: 980px) {
-          padding-top: 20%;
-        }
       }
     }
     &:hover {
@@ -275,8 +273,11 @@ nav {
         visibility: visible;
         @media screen and (min-width: 980px) {
           & {
-            transform: translateX(157px);
+            transform: translateX(20%);
           }
+        }
+        & i {
+          animation: pal-icon 2s;
         }
       }
     }

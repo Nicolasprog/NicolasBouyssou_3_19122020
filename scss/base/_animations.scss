@@ -48,28 +48,33 @@
   animation: charging 3s 500ms infinite ease-in-out;
 }
 
-/* HEART */
-#heart:hover {
+/* REMPLISSAGE HEART */
+#heart {
+  transform: scale (1);
   i:nth-child(1) {
-    opacity: 0;
-  }
-  i:nth-child(2) {
-    color:$color-primary;
     opacity: 1;
   }
-}
-i:nth-child(2) {
-  opacity: 0;
+  i:nth-child(2) {
+    opacity: 0;
+  }
+  &:hover {
+    i:nth-child(1) {
+      opacity: 0.5;
+    }
+    i:nth-child(2) {
+      animation: heart infinite;
+      opacity:1;
+    }
+  }
+  &:active {
+    color:$color-primary;
+  }
 }
 
-/*#heart i:nth-child(1) {
-    -webkit-animation: heart 2s 50ms backwards ease-in-out;
-    animation: heart 2s 50ms backwards ease-in-out;
-  }
-  #heart i:nth-child(2) {
-    -webkit-animation: heart 2s 50ms backwards ease-in-out;
-    animation: heart 2s 50ms backwards ease-in-out;
-  }*/
+#heart i:nth-child(2) {
+  -webkit-animation: heart 2s 50ms infinite ease-in-out;
+  animation: heart 2s 50ms infinite ease-in-out;
+}
 
 /* APPARITION PALETTES */
 .Palettte:nth-child(1) {
@@ -88,8 +93,9 @@ i:nth-child(2) {
   -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
   animation: open-menu 1s 200ms backwards ease-in-out;
 }
+
 /* ICONE PALETTE*/
-.Palette-check-icone i {
-  -webkit-animation: pal-icon 3s 200ms backwards ease-in-out;
-  animation: pal-icon 3s 200ms backwards ease-in-out;
+.Palette-check-icon i {
+  -webkit-animation: pal-icon 1s 50ms infinite ease-in-out;
+  animation: pal-icon 1s 50ms infinite ease-in-out;
 }

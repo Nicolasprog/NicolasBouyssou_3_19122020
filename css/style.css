@@ -43,24 +43,56 @@
 /* ANIMATION HEART */
 @keyframes heart {
   0% {
-    transform: translateY(0);
+    opacity: 0;
+    color: #9356DC;
+    transform: scale(0);
+  }
+  33% {
+    opacity: 0.5;
+    color: #9356DC;
+    transform: scale(33%);
   }
   50% {
-    transform: translateY(50%);
+    opacity: 0.7;
+    color: #9356DC;
+    transform: scale(40%);
+  }
+  66% {
+    opacity: 0.9;
+    color: #9356DC;
+    transform: scale(66%);
   }
   100% {
-    transform: translateY(1);
+    opacity: 1;
+    color: #9356DC;
+    transform: scale(1);
   }
 }
 @-webkit-keyframes heart {
   0% {
-    -webkit-transform: translateY(0);
+    opacity: 0;
+    color: #9356DC;
+    -webkit-transform: scale(0);
+  }
+  33% {
+    opacity: 0.5;
+    color: #9356DC;
+    -webkit-transform: scale(33%);
   }
   50% {
-    -webkit-transform: translateY(50%);
+    opacity: 0.7;
+    color: #9356DC;
+    -webkit-transform: scale(40%);
+  }
+  66% {
+    opacity: 0.9;
+    color: #9356DC;
+    -webkit-transform: scale(66%);
   }
   100% {
-    -webkit-transform: translateY(1);
+    opacity: 1;
+    color: #9356DC;
+    -webkit-transform: scale(1);
   }
 }
 /* ANIMATIONS VERTICAL PALETTES */
@@ -87,24 +119,24 @@
 /* ANIMATIONS ICONE-CHECK */
 @keyframes pal-icon {
   0% {
-    transform: translateX(110%), rotate(0);
+    transform: translateX(0) rotate(0);
   }
   50% {
-    transform: translateX(-50%), rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
   }
   100% {
-    transform: translateX(-100%), rotate(360deg);
+    transform: translateX(-100%) rotate(360deg);
   }
 }
 @-webkit-keyframes pal-icon {
   0% {
-    -webkit-transform: translateX(110%), rotate(0);
+    -webkit-transform: translateX(0) rotate(0);
   }
   50% {
-    -webkit-transform: translateX(-50%), rotate(180deg);
+    -webkit-transform: translateX(-50%) rotate(180deg);
   }
   100% {
-    -webkit-transform: translateX(-100%), rotate(360deg);
+    -webkit-transform: translateX(-100%) rotate(360deg);
   }
 }
 footer {
@@ -231,27 +263,32 @@ h2,
   animation: charging 3s 500ms infinite ease-in-out;
 }
 
-/* HEART */
-#heart:hover i:nth-child(1) {
-  opacity: 0;
+/* REMPLISSAGE HEART */
+#heart {
+  transform: scale 1;
 }
-#heart:hover i:nth-child(2) {
-  color: #9356DC;
+#heart i:nth-child(1) {
   opacity: 1;
 }
-
-i:nth-child(2) {
+#heart i:nth-child(2) {
   opacity: 0;
 }
+#heart:hover i:nth-child(1) {
+  opacity: 0.5;
+}
+#heart:hover i:nth-child(2) {
+  animation: heart infinite;
+  opacity: 1;
+}
+#heart:active {
+  color: #9356DC;
+}
 
-/*#heart i:nth-child(1) {
-    -webkit-animation: heart 2s 50ms backwards ease-in-out;
-    animation: heart 2s 50ms backwards ease-in-out;
-  }
-  #heart i:nth-child(2) {
-    -webkit-animation: heart 2s 50ms backwards ease-in-out;
-    animation: heart 2s 50ms backwards ease-in-out;
-  }*/
+#heart i:nth-child(2) {
+  -webkit-animation: heart 2s 50ms infinite ease-in-out;
+  animation: heart 2s 50ms infinite ease-in-out;
+}
+
 /* APPARITION PALETTES */
 .Palettte:nth-child(1) {
   -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
@@ -274,9 +311,9 @@ i:nth-child(2) {
 }
 
 /* ICONE PALETTE*/
-.Palette-check-icone i {
-  -webkit-animation: pal-icon 3s 200ms backwards ease-in-out;
-  animation: pal-icon 3s 200ms backwards ease-in-out;
+.Palette-check-icon i {
+  -webkit-animation: pal-icon 1s 50ms infinite ease-in-out;
+  animation: pal-icon 1s 50ms infinite ease-in-out;
 }
 
 /*Bloc spécifiques button etc...*/
@@ -539,13 +576,12 @@ nav li i {
   top: 5px;
   font-size: 2em;
 }
+.Column .Tuiles #heart i {
+  animation: heart infinite;
+}
 @media screen and (min-width: 980px) {
   .Column .Tuiles {
     width: 40%;
-  }
-  .Column .Tuiles:hover {
-    transition-duration: 0.5s;
-    transform: scale(1.03);
   }
 }
 
@@ -560,6 +596,9 @@ nav li i {
   right: 5%;
   top: 30px;
   font-size: 2em;
+}
+.title-heart #heart i:hover {
+  animation: heart 2s;
 }
 .title-heart h1 {
   font-size: 30px;
@@ -583,7 +622,6 @@ nav li i {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 4px 4px #d9d9d9;
-  transform: translateX(0);
 }
 .Container-palette .Palette .Pal-check-icon {
   display: flex;
@@ -595,18 +633,13 @@ nav li i {
   right: 0;
   border-radius: 0 10px 10px 0;
   background-color: #99E2D0;
-  visibility: hidden;
+  transform: translateX(0) rotate(0);
 }
 .Container-palette .Palette .Pal-check-icon i {
-  animation: pal-icon 3s;
-  padding-top: 37%;
+  position: absolute;
+  right: 0;
   color: #fff;
   font-size: 25px;
-}
-@media screen and (min-width: 980px) {
-  .Container-palette .Palette .Pal-check-icon i {
-    padding-top: 20%;
-  }
 }
 .Container-palette .Palette:hover {
   position: relative;
@@ -620,8 +653,11 @@ nav li i {
 }
 @media screen and (min-width: 980px) {
   .Container-palette .Palette:hover .Pal-check-icon {
-    transform: translateX(157px);
+    transform: translateX(20%);
   }
+}
+.Container-palette .Palette:hover .Pal-check-icon i {
+  animation: pal-icon 2s;
 }
 .Container-palette .Palette .Description-palette {
   padding-left: 13px;

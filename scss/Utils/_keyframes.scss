@@ -39,24 +39,56 @@
 /* ANIMATION HEART */
 @keyframes heart {
   0% {
-    transform:translateY(0);
+    opacity: (0);
+    color: $color-primary;
+    transform: scale(0);
+  }
+  33% {
+    opacity: 0.5;
+    color: $color-primary;
+    transform: scale(33%);
   }
   50% {
-    transform:translateY(50%);
+    opacity: 0.7;
+    color: $color-primary;
+    transform: scale(40%);
+  }
+  66% {
+    opacity: 0.9;
+    color: $color-primary;
+    transform: scale(66%);
   }
   100% {
-    transform:translateY(1);
+    opacity: (1);
+    color: $color-primary;
+    transform: scale(1);
   }
 }
 @-webkit-keyframes heart {
   0% {
-    -webkit-transform:translateY(0);
+    opacity: (0);
+    color: $color-primary;
+    -webkit-transform: scale(0);
+  }
+  33% {
+    opacity: 0.5;
+    color: $color-primary;
+    -webkit-transform: scale(33%);
   }
   50% {
-    -webkit-transform:translateY(50%);
+    opacity: 0.7;
+    color: $color-primary;
+    -webkit-transform: scale(40%);
+  }
+  66% {
+    opacity: 0.9;
+    color: $color-primary;
+    -webkit-transform: scale(66%);
   }
   100% {
-    -webkit-transform:translateY(1);
+    opacity: (1);
+    color: $color-primary;
+    -webkit-transform: scale(1);
   }
 }
 
@@ -84,23 +116,23 @@
 /* ANIMATIONS ICONE-CHECK */
 @keyframes pal-icon {
   0% {
-    transform: translateX(110%), rotate(0);
+    transform: translateX(0) rotate(0);
   }
   50% {
-    transform: translateX(-50%), rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
   }
   100% {
-    transform: translateX(-100%), rotate(360deg);
+    transform: translateX(-100%) rotate(360deg);
   }
 }
 @-webkit-keyframes pal-icon {
   0% {
-    -webkit-transform: translateX(110%), rotate(0);
+    -webkit-transform: translateX(0) rotate(0);
   }
   50% {
-    -webkit-transform: translateX(-50%), rotate(180deg);
+    -webkit-transform: translateX(-50%) rotate(180deg);
   }
   100% {
-    -webkit-transform: translateX(-100%), rotate(360deg);
+    -webkit-transform: translateX(-100%) rotate(360deg);
   }
 }
