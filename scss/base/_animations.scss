@@ -50,7 +50,6 @@
 
 /* REMPLISSAGE HEART */
 #heart {
-  transform: scale (1);
   i:nth-child(1) {
     opacity: 1;
   }
@@ -62,8 +61,7 @@
       opacity: 0.5;
     }
     i:nth-child(2) {
-      animation: heart infinite;
-      opacity:1;
+      animation: heart forwards;
     }
   }
   &:active {

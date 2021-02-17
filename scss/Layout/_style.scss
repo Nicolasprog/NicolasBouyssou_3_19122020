@@ -199,9 +199,6 @@ nav {
       right: 1%;
       top: 5px;
       font-size: 2em;
-      & i {
-        animation: heart infinite;
-      }
     }
     @media screen and (min-width: 980px) {
       width: 40%;
@@ -218,9 +215,6 @@ nav {
     right: 5%;
     top: 30px;
     font-size: 2em;
-    & i:hover {
-      animation: heart 2s;
-    }
   }
   h1 {
     font-size: 30px;
@@ -245,8 +239,6 @@ nav {
     background-color: $color-accent;
     box-shadow: 0 4px 4px #d9d9d9;
     .Pal-check-icon {
-      display: flex;
-      justify-content: center;
       height: 102%;
       width: 10%;
       position: absolute;
@@ -255,10 +247,11 @@ nav {
       border-radius: 0 10px 10px 0;
       background-color: $color-tertiary;
       transform: translateX(0) rotate(0);
-      //visibility: hidden;
+      z-index: -1;
       i {
         position: absolute;
-        right: 0;
+        right:0;
+        top:37%;
         color: $color-accent;
         font-size: 25px;
       }
@@ -268,12 +261,11 @@ nav {
       width: 90%;
       border-radius: 10px 0 0 10px;
       .Pal-check-icon {
-        position: absolute;
         transform: translateX(75px);
-        visibility: visible;
+        z-index: 0;
         @media screen and (min-width: 980px) {
           & {
-            transform: translateX(20%);
+            transform: translateX(157px);
           }
         }
         & i {
