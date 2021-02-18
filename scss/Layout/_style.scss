@@ -210,6 +210,14 @@ nav {
   position: relative;
   margin: 0 0 40px 5%;
   padding-top: 20px;
+  @media screen and (min-width: 980px) {
+    & {
+      margin:0 5% 2% 40%;
+      h1 {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
   #heart {
     position: absolute;
     right: 5%;
@@ -225,6 +233,13 @@ nav {
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
+  @media screen and (min-width: 980px) {
+    & {
+      display: inline-block;
+      margin-left: 2%;
+      width:30%;
+    }
+  }
   #Indicator {
     width: 40px;
     margin-bottom: 20px;

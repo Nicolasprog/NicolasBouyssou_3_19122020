@@ -584,6 +584,14 @@ nav li i {
   margin: 0 0 40px 5%;
   padding-top: 20px;
 }
+@media screen and (min-width: 980px) {
+  .title-heart {
+    margin: 0 5% 2% 40%;
+  }
+  .title-heart h1 {
+    border-bottom: 2px solid black;
+  }
+}
 .title-heart #heart {
   position: absolute;
   right: 5%;
@@ -598,6 +606,13 @@ nav li i {
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 980px) {
+  .Container-palette {
+    display: inline-block;
+    margin-left: 2%;
+    width: 30%;
+  }
 }
 .Container-palette #Indicator {
   width: 40px;
