@@ -586,7 +586,7 @@ nav li i {
 }
 @media screen and (min-width: 980px) {
   .title-heart {
-    margin: 0 5% 2% 40%;
+    margin: 0 3% 2% 40%;
   }
   .title-heart h1 {
     border-bottom: 2px solid black;
