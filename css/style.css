@@ -611,7 +611,13 @@ nav li i {
   .Container-palette {
     display: inline-block;
     margin-left: 2%;
-    width: 30%;
+    width: 45%;
+  }
+  .Container-palette:nth-child(4) {
+    display: block;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 65%;
   }
 }
 .Container-palette #Indicator {
