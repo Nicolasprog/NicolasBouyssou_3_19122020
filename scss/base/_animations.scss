@@ -49,7 +49,7 @@
 }
 
 /* REMPLISSAGE HEART */
-#heart {
+.heart {
   i:nth-child(1) {
     opacity: 1;
   }
@@ -57,22 +57,26 @@
     opacity: 0;
   }
   &:hover {
+    color: $color-primary;
     i:nth-child(1) {
-      opacity: 0.5;
+      opacity: 1;
     }
     i:nth-child(2) {
+      opacity: 1;
       animation: heart 3s;
     }
   }
   &:active {
-    color:$color-primary;
+    i:nth-child(1) {
+      opacity: 0;
+    }
+    i:nth-child(2) {
+      opacity: 1;
+      animation: none;
+      color: $color-primary;
+    }
   }
 }
-
-// #heart i:nth-child(2) {
-//   -webkit-animation: heart 2s 50ms infinite ease-in-out;
-//   animation: heart 2s 50ms infinite ease-in-out;
-// }
 
 /* APPARITION PALETTES */
 .Palettte:nth-child(1) {
@@ -94,6 +98,6 @@
 
 /* ICONE PALETTE*/
 .Palette-check-icon i {
-  -webkit-animation: pal-icon 1s 50ms infinite ease-in-out;
-  animation: pal-icon 1s 50ms infinite ease-in-out;
+  -webkit-animation: pal-icon 2s 50ms infinite ease-in-out;
+  animation: pal-icon 2s 50ms infinite ease-in-out;
 }
