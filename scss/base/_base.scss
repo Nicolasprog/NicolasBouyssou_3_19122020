@@ -4,7 +4,10 @@ footer {
   color: white;
   display: flex;
   .conteneur__footer {
-    margin: auto;
+    margin-left: 20px;
+    @media screen and (min-width: 980px) {
+      margin: auto;
+    }
   }
   .Logo {
     text-align: start;

@@ -46,52 +46,30 @@
     opacity: 0;
     color: #9356DC;
     transform: scale(0);
-  }
-  33% {
-    opacity: 0.5;
-    color: #9356DC;
-    transform: scale(33%);
-  }
-  50% {
-    opacity: 0.7;
-    color: #9356DC;
-    transform: scale(40%);
-  }
-  66% {
-    opacity: 0.9;
-    color: #9356DC;
-    transform: scale(66%);
-  }
-  100% {
-    opacity: 1;
-    color: #9356DC;
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes heart {
-  0% {
-    opacity: 0;
-    color: #9356DC;
     -webkit-transform: scale(0);
   }
   33% {
     opacity: 0.5;
     color: #9356DC;
-    -webkit-transform: scale(33%);
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
   }
   50% {
     opacity: 0.7;
     color: #9356DC;
-    -webkit-transform: scale(40%);
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
   }
   66% {
     opacity: 0.9;
     color: #9356DC;
-    -webkit-transform: scale(66%);
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
   }
   100% {
     opacity: 1;
     color: #9356DC;
+    transform: scale(1);
     -webkit-transform: scale(1);
   }
 }
@@ -146,7 +124,12 @@ footer {
   display: flex;
 }
 footer .conteneur__footer {
-  margin: auto;
+  margin-left: 20px;
+}
+@media screen and (min-width: 980px) {
+  footer .conteneur__footer {
+    margin: auto;
+  }
 }
 footer .Logo {
   text-align: start;
@@ -201,7 +184,6 @@ p {
 }
 
 h1,
-h2,
 .Logo {
   font-family: "Shrikhand", Arial, Sans-serif;
 }
@@ -280,11 +262,6 @@ h2,
   color: #9356DC;
 }
 
-#heart i:nth-child(2) {
-  -webkit-animation: heart 2s 50ms infinite ease-in-out;
-  animation: heart 2s 50ms infinite ease-in-out;
-}
-
 /* APPARITION PALETTES */
 .Palettte:nth-child(1) {
   -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
@@ -332,7 +309,7 @@ h2,
   background: linear-gradient(160deg, #FF79DA, #9356DC);
 }
 .search:hover {
-  filter: brightness(87%);
+  filter: brightness(80%);
   transition-duration: 1s;
 }
 
@@ -401,6 +378,7 @@ nav {
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  margin-top: 20px;
 }
 nav h2 {
   padding-left: 20px;
@@ -429,11 +407,9 @@ nav li p {
 nav li:hover {
   background-color: #f5edff;
 }
-nav li:hover,
 nav li:hover .nav-i {
   color: #9356DC;
 }
-nav li:hover,
 nav li:hover p {
   color: #000;
 }
