@@ -213,6 +213,7 @@ h1,
   margin-bottom: 20px;
   box-shadow: 0px 4px 4px #d9d9d9;
   border-radius: 10px;
+  background-color: #fff;
 }
 .Column .Tuiles__Description {
   position: relative;
@@ -369,9 +370,9 @@ h1,
   background: linear-gradient(160deg, #FF79DA, #9356DC);
 }
 .search:hover {
-  filter: brightness(85%);
+  filter: brightness(110%);
   transition-duration: 2s;
-  box-shadow: 0px 7px 7px 0 #d9d9d9;
+  box-shadow: 5px 7px 7px 0 #808080;
 }
 
 /* Navigation */
@@ -379,6 +380,7 @@ nav {
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  padding: 0 20px;
 }
 nav h2 {
   padding-left: 20px;
@@ -435,10 +437,12 @@ nav li i {
     font-family: "Shrikhand", sans-serif;
     text-align: center;
     font-size: xx-large;
-    margin-top: 0;
+    margin: 0 0 20px 0;
   }
   nav li {
+    box-shadow: 3px 4px 4px #d9d9d9;
     height: 40px;
+    background-color: #fff;
   }
 }
 
@@ -553,13 +557,14 @@ nav li i {
   .Conteneur-desktop {
     display: flex;
     padding-top: 50px;
+    background-color: #f6f6f6;
   }
 }
 .Conteneur-desktop #title {
-  margin-top: 50px;
+  padding-top: 30px;
   height: 190px;
   text-align: center;
-  background: #f6f6f6;
+  background-color: #f6f6f6;
 }
 .Conteneur-desktop #title h1 {
   margin: 0 0 25px 0;
@@ -572,6 +577,7 @@ nav li i {
     flex-direction: column;
     margin-top: 0;
     width: 50%;
+    padding-top: 0;
   }
   .Conteneur-desktop #title h1 {
     margin-bottom: 30px;
@@ -629,6 +635,7 @@ nav li i {
   #Accueil h2 {
     font-size: xx-large;
     padding-left: 5%;
+    margin-top: 0;
   }
 }
 
