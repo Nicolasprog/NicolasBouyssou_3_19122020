@@ -1,4 +1,6 @@
-/*  ANIMATIONS LOADER */
+// KEYFRAMES
+
+//  ANIMATIONS LOADER 
 @keyframes charging {
   0% {
     opacity: 1;
@@ -22,7 +24,7 @@
   }
 }
 
-/* ANIMATION HEART */
+// ANIMATION HEART 
 @keyframes heart {
   0% {
     color: $color-primary;
@@ -46,7 +48,7 @@
   }
 }
 
-/* ANIMATIONS VERTICAL PALETTES */
+// ANIMATIONS VERTICAL PALETTES 
 @keyframes open-menu {
   0% {
     opacity: 0;
@@ -59,18 +61,19 @@
     -webkit-transform: translateY(0);
   }
 }
-/* ANIMATIONS ICONE-CHECK */
+
+// ANIMATIONS ICONE-CHECK 
 @keyframes pal-icon {
   0% {
-    transform: translateX(0) rotate(0);
-    -webkit-transform: translateX(0) rotate(0);
+    transform: translateX(160%) rotate(0);
+    -webkit-transform: translateX(160%) rotate(0);
   }
   50% {
-    transform: translateX(-50%) rotate(180deg);
-    -webkit-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(50%) rotate(180deg);
+    -webkit-transform: translateX(50%) rotate(180deg);
   }
   100% {
-    transform: translateX(-100%) rotate(360deg);
-    -webkit-transform: translateX(-100%) rotate(360deg);
+    transform: translateX(0) rotate(360deg);
+    -webkit-transform: translateX(0) rotate(360deg);
   }
 }

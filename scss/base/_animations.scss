@@ -1,28 +1,4 @@
-/* LOADER */
-.loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: $color-primary;
-  transform: scale(0);
-  animation: charging 3s;
-  z-index: 999;
-}
-.loader-inner {
-  transform: translateY(-50%);
-  top: 50%;
-  position: absolute;
-  width: calc(100% - 200px);
-  color: #fff;
-  padding: 0 100px;
-  text-align: center;
-}
-.loader-inner span {
-  font-size: 30px;
-  opacity: 0;
-  display: inline-block;
-}
-
+// ANIMATION LOADER
 .loader-inner span:nth-child(6) {
   -webkit-animation: charging 3s infinite ease-in-out;
   animation: charging 3s infinite ease-in-out;
@@ -48,37 +24,7 @@
   animation: charging 3s 500ms infinite ease-in-out;
 }
 
-/* REMPLISSAGE HEART */
-.heart {
-  i:nth-child(1) {
-    opacity: 1;
-  }
-  i:nth-child(2) {
-    opacity: 0;
-  }
-  &:hover {
-    color: $color-primary;
-    i:nth-child(1) {
-      opacity: 1;
-    }
-    i:nth-child(2) {
-      opacity: 1;
-      animation: heart 3s;
-    }
-  }
-  &:active {
-    i:nth-child(1) {
-      opacity: 0;
-    }
-    i:nth-child(2) {
-      opacity: 1;
-      animation: none;
-      color: $color-primary;
-    }
-  }
-}
-
-/* APPARITION PALETTES */
+// APPARITION PALETTES 
 .Palettte:nth-child(1) {
   -webkit-animation: open-menu 1s 50ms backwards ease-in-out;
   animation: open-menu 1s 50ms backwards ease-in-out;
@@ -96,7 +42,7 @@
   animation: open-menu 1s 200ms backwards ease-in-out;
 }
 
-/* ICONE PALETTE*/
+// ICONE PALETTE
 .Palette-check-icon i {
   -webkit-animation: pal-icon 2s 50ms infinite ease-in-out;
   animation: pal-icon 2s 50ms infinite ease-in-out;

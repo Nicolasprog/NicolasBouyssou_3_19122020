@@ -92,8 +92,7 @@
       background-color: $color-accent;
       box-shadow: 0 4px 4px #d9d9d9;
       .Pal-check-icon {
-        display: block;
-        align-items: center;
+        text-align: center;
         height: 102%;
         width: 10%;
         position: absolute;
@@ -104,9 +103,9 @@
         transform: translateX(0) rotate(0);
         visibility: hidden;
         i {
-          //position: absolute;
-          //right: 36%;
-          //top: 37%;
+          position: absolute;
+          right: 33%;
+          top: 35%;
           color: $color-accent;
           font-size: 25px;
         }
