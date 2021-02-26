@@ -104,7 +104,7 @@
         visibility: hidden;
         i {
           position: absolute;
-          right: 33%;
+          right:30%;
           top: 35%;
           color: $color-accent;
           font-size: 25px;
@@ -129,12 +129,18 @@
       }
       .Description-palette {
         padding-left: 13px;
-        width:90%;
+        width:80%;
         .title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           font-size: 1.15em;
           margin: 10px 0 0 0;
         }
         .Description-price {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           margin: 10px 0 15px 0;
           span {
             font-weight: bold;

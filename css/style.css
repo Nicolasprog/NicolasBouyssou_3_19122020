@@ -303,7 +303,7 @@ h1,
 }
 .Container-palette .Palette .Pal-check-icon i {
   position: absolute;
-  right: 33%;
+  right: 30%;
   top: 35%;
   color: #fff;
   font-size: 25px;
@@ -327,13 +327,19 @@ h1,
 }
 .Container-palette .Palette .Description-palette {
   padding-left: 13px;
-  width: 90%;
+  width: 80%;
 }
 .Container-palette .Palette .Description-palette .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.15em;
   margin: 10px 0 0 0;
 }
 .Container-palette .Palette .Description-palette .Description-price {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 10px 0 15px 0;
 }
 .Container-palette .Palette .Description-palette .Description-price span {
