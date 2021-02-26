@@ -1,0 +1,40 @@
+/* Page spécificity */ 
+
+.menu-img-1 {
+    background-image: url(../images/restaurants/Lapalettedugout.png);
+    @include top-menu;
+  }
+  .menu-img-2 {
+    background-image: url(../images/restaurants/Lanoteenchantée.png);
+    @include top-menu;
+  }
+  .menu-img-3 {
+    background-image: url(../images/restaurants/Alafrançaise.png);
+    @include top-menu;
+  }
+  .menu-img-4 {
+    background-image: url(../images/restaurants/Ledélicedessens.png);
+    @include top-menu;
+  }
+
+#Accueil {
+    margin-bottom: 40px;
+    h2 {
+      padding-left: 20px;
+      @media screen and (min-width: 980px) {
+        font-size: xx-large;
+        padding-left: 5%;
+      }
+    }
+  }
+  #Menu-1,
+  #Menu-2,
+  #Menu-3,
+  #Menu-4 {
+    position: relative;
+    border-radius: 60px 60px 0 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+    background-color: $color-bg;
+  }

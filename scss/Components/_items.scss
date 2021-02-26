@@ -1,0 +1,50 @@
+/* Items */
+
+// Logo
+.Logo {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  i {
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    font-size: 25px;
+  }
+}
+
+// Location
+#location {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  font-weight: bold;
+  i {
+    padding-right: 10px;
+  }
+}
+
+// Title menu
+.title-heart {
+  display: flex;
+  position: relative;
+  margin: 0 0 40px 5%;
+  padding-top: 20px;
+  @media screen and (min-width: 980px) {
+    & {
+      margin: 0 3% 2% 40%;
+      h1 {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+  .heart {
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
