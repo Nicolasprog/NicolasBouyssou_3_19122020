@@ -8,19 +8,18 @@
     -webkit-transform: translateX(0);
   }
   80% {
-    opacity: 0.6;
-    transform: translateX(0.8);
-    -webkit-transform: translateX(0.8);
+    opacity: 0.75;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
   }
   95% {
-    opacity: 0.4;
-    transform: translateX(0.9);
-    -webkit-transform: translateX(0.9);
+    opacity: 0.5;
+    transform: translateX(-60%);
+    -webkit-transform: translateX(-60%);
   }
   100% {
-    opacity: 0;
-    transform: translateX(1);
-    -webkit-transform: translateX(1);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
   }
 }
 
