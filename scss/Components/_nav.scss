@@ -3,7 +3,6 @@ nav {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    margin-top: 20px;
     h2 {
       padding-left: 20px;
     }
@@ -54,6 +53,7 @@ nav {
     @media screen and (min-width: 980px) {
       width: 50%;
       h2 {
+        font-family: "Shrikhand",sans-serif;
         text-align: center;
         font-size: xx-large;
         margin-top: 0;

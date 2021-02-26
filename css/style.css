@@ -327,7 +327,7 @@ h1,
 }
 .Container-palette .Palette .Description-palette {
   padding-left: 13px;
-  width: 83%;
+  width: 82%;
 }
 .Container-palette .Palette .Description-palette .title {
   white-space: nowrap;
@@ -379,7 +379,6 @@ nav {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  margin-top: 20px;
 }
 nav h2 {
   padding-left: 20px;
@@ -433,6 +432,7 @@ nav li i {
     width: 50%;
   }
   nav h2 {
+    font-family: "Shrikhand", sans-serif;
     text-align: center;
     font-size: xx-large;
     margin-top: 0;
@@ -501,9 +501,6 @@ nav li i {
   .title-heart {
     margin: 0 3% 2% 40%;
   }
-  .title-heart h1 {
-    border-bottom: 2px solid black;
-  }
 }
 .title-heart .heart {
   position: absolute;
@@ -512,7 +509,11 @@ nav li i {
   font-size: 2em;
 }
 .title-heart h1 {
+  width: 80%;
   font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .heart i:nth-child(1) {
@@ -558,6 +559,7 @@ nav li i {
   margin-top: 50px;
   height: 190px;
   text-align: center;
+  background: #f6f6f6;
 }
 .Conteneur-desktop #title h1 {
   margin: 0 0 25px 0;
@@ -617,10 +619,11 @@ nav li i {
 }
 
 #Accueil {
-  margin-bottom: 40px;
+  background: #f6f6f6;
+  padding-bottom: 40px;
 }
 #Accueil h2 {
-  padding-left: 20px;
+  padding: 20px 0 0 20px;
 }
 @media screen and (min-width: 980px) {
   #Accueil h2 {
