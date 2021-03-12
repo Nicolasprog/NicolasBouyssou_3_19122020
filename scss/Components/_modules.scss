@@ -94,7 +94,7 @@
       box-shadow: 0 4px 4px #d9d9d9;
       .Pal-check-icon {
         text-align: center;
-        height: 102%;
+        height: 100%;
         width: 10%;
         position: absolute;
         top:0;
@@ -102,18 +102,19 @@
         border-radius: 0 10px 10px 0;
         background-color: $color-tertiary;
         transform: translateX(0) rotate(0);
+        box-shadow: 0 4px 4px #d9d9d9;
         visibility: hidden;
         i {
           position: absolute;
-          right:30%;
+          right:29%;
           top: 35%;
           color: $color-accent;
-          font-size: 25px;
+          font-size: 30px;
         }
       }
       &:hover {
         position: relative;
-        width: 90%;
+        animation: trans-pal 2s;
         border-radius: 10px 0 0 10px;
         .Pal-check-icon {
           transform: translateX(100%);
@@ -124,7 +125,7 @@
             }
           }
           & i {
-            animation: pal-icon 2s;
+            animation: pal-icon 1s;
           }
         }
       }

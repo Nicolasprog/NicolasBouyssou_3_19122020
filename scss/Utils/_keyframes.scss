@@ -35,11 +35,6 @@
     transform: scale(0.3);
     -webkit-transform:scale(0.3);
   }
-  66% {
-    color: $color-primary;
-    transform: scale(0.7);
-    -webkit-transform:scale(0.7);
-  }
   100% {
     color: $color-primary;
     transform: scale(1);
@@ -61,18 +56,26 @@
   }
 }
 
+// ANIMATION PALETTE X
+@keyframes trans-pal {
+  0% {
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+  }
+  100% {
+    transform:translateX(-10%);
+    -webkit-transform:translateX(-10%);
+  }
+}
+
 // ANIMATIONS ICONE-CHECK 
 @keyframes pal-icon {
   0% {
-    transform: translateX(160%) rotate(0);
-    -webkit-transform: translateX(160%) rotate(0);
-  }
-  50% {
-    transform: translateX(50%) rotate(180deg);
-    -webkit-transform: translateX(50%) rotate(180deg);
-  }
+    transform:rotate(0);
+    -webkit-transform:rotate(0);
+  }                                                                                                                              
   100% {
-    transform: translateX(0) rotate(360deg);
-    -webkit-transform: translateX(0) rotate(360deg);
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
   }
 }

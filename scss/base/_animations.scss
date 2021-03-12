@@ -30,16 +30,22 @@
   animation: open-menu 1s 50ms backwards ease-in-out;
 }
 .Palette:nth-child(2) {
-  -webkit-animation: open-menu 1s 100ms backwards ease-in-out;
-  animation: open-menu 1s 100ms backwards ease-in-out;
-}
-.Palette:nth-child(3) {
   -webkit-animation: open-menu 1s 150ms backwards ease-in-out;
   animation: open-menu 1s 150ms backwards ease-in-out;
 }
+.Palette:nth-child(3) {
+  -webkit-animation: open-menu 1s 350ms backwards ease-in-out;
+  animation: open-menu 1s 450ms backwards ease-in-out;
+}
 .Palette:nth-child(4) {
-  -webkit-animation: open-menu 1s 200ms backwards ease-in-out;
-  animation: open-menu 1s 200ms backwards ease-in-out;
+  -webkit-animation: open-menu 1s 650ms backwards ease-in-out;
+  animation: open-menu 1s 650ms backwards ease-in-out;
+}
+
+// PALETTE X
+.Palette {
+  -webkit-animation: trans-pal 2s 50ms infinite ease-in-out;
+  animation: trans-pal 2s 50ms infinite ease-in-out;
 }
 
 // ICONE PALETTE
